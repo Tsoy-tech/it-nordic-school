@@ -1,1 +1,1 @@
-# it-nordic-school
+# it-nordic-school lessons
