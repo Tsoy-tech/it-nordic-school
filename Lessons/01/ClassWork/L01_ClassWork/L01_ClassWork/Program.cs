@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace ConsoleApp01
+namespace L01_ClassWork
 {
     class Program
     {
@@ -10,7 +10,7 @@ namespace ConsoleApp01
             Console.WriteLine("Введите имя");
             string name = Console.ReadLine();
             Thread.Sleep(5000);
-            Console.WriteLine($"Здравствуйте, {name}"!);
+            Console.WriteLine($"Здравствуйте, {name}!");
             Console.ReadKey();
         }
     }
