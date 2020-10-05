@@ -43,7 +43,6 @@ namespace L02_HomeWork
                 Console.WriteLine($"{firstNumber}^{secondNumber} = " +
                     $"{Math.Pow(double.Parse(firstNumber), double.Parse(secondNumber))}");
             }
-            else {}
         }
     }
 }
