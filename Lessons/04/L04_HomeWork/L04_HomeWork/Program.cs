@@ -49,6 +49,7 @@ namespace L04_HomeWork
 
 			Console.ForegroundColor = ConsoleColor.DarkYellow;
 			Console.SetCursorPosition(0, 4);
+			Console.WriteLine("Вам потребуются следующие контейнеры:");
 			if (howManyTwenty > 0)
 			{
 				Console.WriteLine($"{((int)JuiceСontainers.Twenty).ToString()}".PadLeft(3) +
