@@ -10,8 +10,8 @@ namespace L04_HomeWork
 			int howManyLarge;
 			int howManyMedium;
 			int howManySmall;
-			int remainderAfterTwenty;
-			int remainderAfterFive;
+			int remainderAfterLarge;
+			int remainderAfterMedium;
 			float volume;
 			string inputeVolume;
 			const int smallContainer = 1;
@@ -30,10 +30,10 @@ namespace L04_HomeWork
 			volume = float.Parse(inputeVolume);
 
 			howManyLarge = (int)Math.Ceiling(volume) / largeContainer;
-			remainderAfterTwenty = (int)Math.Ceiling(volume) % largeContainer;
-			howManyMedium = remainderAfterTwenty / mediumContainer;
-			remainderAfterFive = remainderAfterTwenty % mediumContainer;
-			howManySmall = remainderAfterFive / smallContainer;
+			remainderAfterLarge = (int)Math.Ceiling(volume) % largeContainer;
+			howManyMedium = remainderAfterLarge / mediumContainer;
+			remainderAfterMedium = remainderAfterLarge % mediumContainer;
+			howManySmall = remainderAfterMedium / smallContainer;
 
 			Console.ForegroundColor = ConsoleColor.DarkYellow;
 			Console.SetCursorPosition(0, 4);
