@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace L03_HomeWork
 {
@@ -6,34 +7,48 @@ namespace L03_HomeWork
 	{
 		static void Main()
 		{
-			const int index = 10;
+			const int indexVertical = 10;
+			const int indexHorizontal = 10;
+			const int startNumberVertical = 1;
+			const int startNumberHorizontal = 1;
+			const int stepChangeVertical = 1;
+			const int stepChangeHorizontal = 1;
+			int[] verticalMultipliers = new int[indexVertical];
+			int[] horizontalMultipliers = new int[indexHorizontal];
+			int[,] allMultipliers = new int[indexVertical, indexHorizontal];
 
-			int[] verticalMultipliers = new int[index];
-			int[] horizontalMultipliers = new int[index];
-			
-			Console.ForegroundColor = ConsoleColor.DarkRed;
-			Console.Write("*".PadLeft(5));
-
-			for (int i = 0; i < index; i++) 
+			for (int i = 0; i < indexVertical; i++)
 			{
-				verticalMultipliers[i] = i + 1;
-				horizontalMultipliers[i] = i + 1;
-
-				Console.Write(horizontalMultipliers[i].ToString().PadLeft(5));
+				verticalMultipliers[i] = startNumberVertical + stepChangeVertical * i ;
+			}
+			for (int j = 0; j < indexHorizontal; j++)
+			{
+				horizontalMultipliers[j] = startNumberHorizontal  + stepChangeHorizontal * j;
+			}
+			for (int i = 0; i < indexVertical; i++)
+			{
+				for (int j = 0; j < indexHorizontal; j++)
+				{
+					allMultipliers[i,j] = horizontalMultipliers[j] * verticalMultipliers[i];
+				}
 			}
 
+			Console.ForegroundColor = ConsoleColor.DarkRed;
+			Console.Write("*".PadLeft(5));
+			for (int j = 0; j < indexHorizontal; j++)
+			{
+				Console.Write(horizontalMultipliers[j].ToString().PadLeft(5));
+			}
 			Console.ForegroundColor = ConsoleColor.White;
 			Console.Write('\n');
-
-			for (int i = 0; i < index; i++)
+			for (int i = 0; i < indexVertical; i++)
 			{
 				Console.ForegroundColor = ConsoleColor.DarkRed;
 				Console.Write(verticalMultipliers[i].ToString().PadLeft(5));
 				Console.ForegroundColor = ConsoleColor.White;
-
-				for (int j = 0; j < index; j++)
+				for (int j = 0; j < indexHorizontal; j++)
 				{
-					Console.Write((horizontalMultipliers[j] * verticalMultipliers[i]).ToString().PadLeft(5));
+					Console.Write(allMultipliers[i, j].ToString().PadLeft(5));
 				}
 				Console.Write('\n');
 			}
