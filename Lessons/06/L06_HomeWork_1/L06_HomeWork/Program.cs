@@ -12,7 +12,7 @@ namespace L06_HomeWork
 
 			//Input
 
-			Console.WriteLine($"Введите положительное натуральное число не более 2 миллиардов:");
+			Console.WriteLine($"Введите положительное натуральное число не более {int.MaxValue}:");
 
 			do
 			{
@@ -38,14 +38,14 @@ namespace L06_HomeWork
 					continue;
 				}
 
-				if (inputNumber <= 2000000000 && inputNumber >= 0)
+				if (inputNumber >= 0)
 					break;
 			}
 			while (true);
 
 			//Calculations
 
-			foreach(char digit in inputNumber.ToString())
+			foreach(char digit in input)
 			{
 				int a = int.Parse(digit.ToString());
 
