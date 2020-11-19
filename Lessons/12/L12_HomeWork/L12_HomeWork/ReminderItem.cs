@@ -2,7 +2,7 @@
 
 namespace L12_HomeWork
 {
-	class ReminderItem
+	public class ReminderItem : ReminderItemPresenter
 	{
 		public DateTimeOffset AlarmDate { get; set; }
 		public string AlarmMessage { get; set; }
@@ -26,7 +26,6 @@ namespace L12_HomeWork
 			AlarmDate = alarmDate;
 			AlarmMessage = alarmMessage;
 		}
-		public ReminderItem() { }
 
 		public virtual void WriteProperties()
 		{
@@ -36,23 +35,7 @@ namespace L12_HomeWork
 				$"Time to alarm: {TimeToAlarmLeft(TimeToAlarm)}\n" +
 				$"Is outdated: {IsOutdated}\n");
 		}
-		public string TimeToAlarmLeft(TimeSpan time)
-		{
-			string days = string.Empty;
-			string timeLeftFormat = string.Empty;
 
-			if (time.Days != 0 && time.Days != 1)
-			{
-				days = $"{time.Days.ToString()} days";
-			}
-			else if(time.Days == 1)
-			{
-				days = $"{time.Days.ToString()} day";
-			}
-
-			timeLeftFormat = $"{days} {time:hh\\:mm\\:ss}";
-			return timeLeftFormat.Trim();
-		}
 		public  override string ToString()
 		{ 
 			Type objectType = typeof(L12_HomeWork.ReminderItem);

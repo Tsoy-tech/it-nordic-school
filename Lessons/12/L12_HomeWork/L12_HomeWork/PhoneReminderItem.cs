@@ -2,7 +2,7 @@
 
 namespace L12_HomeWork
 {
-	class PhoneReminderItem : ReminderItem
+	public class PhoneReminderItem : ReminderItem
 	{
 		public string PhoneNumber { get; set; }
 
@@ -10,7 +10,6 @@ namespace L12_HomeWork
 		{
 			PhoneNumber = phoneNumber;
 		}
-		public PhoneReminderItem() { }
 
 		public override void WriteProperties()
 		{
