@@ -55,19 +55,19 @@ namespace L13_HomeWork
 		//Methods
 		public override void LogError(string message)
 		{
-			byte[] log = _encoding.GetBytes(LogOutputFormat() + message);
+			byte[] log = _encoding.GetBytes(LogOutputFormat() + message + '\n');
 
 			_fileStream.Write(log);
 		}
 		public override void LogInfo(string message)
 		{
-			byte[] log = _encoding.GetBytes(LogOutputFormat() + message);
+			byte[] log = _encoding.GetBytes(LogOutputFormat() + message + '\n');
 
 			_fileStream.Write(log);
 		}
 		public override void LogWarning(string message)
 		{
-			byte[] log = _encoding.GetBytes(LogOutputFormat() + message);
+			byte[] log = _encoding.GetBytes(LogOutputFormat() + message + '\n');
 
 			_fileStream.Write(log);
 		}
