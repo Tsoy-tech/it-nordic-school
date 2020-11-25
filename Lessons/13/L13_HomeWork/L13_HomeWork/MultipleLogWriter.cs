@@ -6,9 +6,9 @@ using System.Collections;
 
 namespace L13_HomeWork
 {
-	public class MultipleLogWriter : AbstractLogWriter, ILogWriter
+	public class MultipleLogWriter : AbstractLogWriter, ILogWriter, IDisposable
 	{
-		public List<ILogWriter> _logWriter;
+		private List<ILogWriter> _logWriter;
 
 		public MultipleLogWriter(ILogWriter logWriter)
 		{
@@ -60,5 +60,17 @@ namespace L13_HomeWork
 		public override void LogError(string message) { }
 		public override void LogInfo(string message) { }
 		public override void LogWarning(string message) { }
+
+		public void Dispose()
+		{
+			foreach (object writer in _logWriter)
+			{
+				if (_logWriter is IDisposable)
+				{
+					(_logWriter as IDisposable).Dispose();
+				}
+			}
+
+		}
 	}
 }

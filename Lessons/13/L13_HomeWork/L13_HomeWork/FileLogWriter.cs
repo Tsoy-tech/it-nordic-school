@@ -74,7 +74,8 @@ namespace L13_HomeWork
 
 		public void Dispose()
 		{
-			_fileStream.Dispose();
+			if(_fileStream != null)
+				_fileStream.Dispose();
 		}
 
 	}
