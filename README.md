@@ -13,3 +13,4 @@ git commit -m""
 git commit --amend --author=
 git push
 pwd
+history -r
