@@ -4,16 +4,14 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Text;
 
-namespace L14_HomeWork
+namespace L15_HomeWork
 {
 	class Program
 	{
 		static void Main()
 		{
-			var consoleLog = ConsoleLogWriter.GetInstance();
-
-			using var fileLog = FileLogWriter.GetInstance();
-			fileLog.FileName = "Logs";
+			var consoleLog = new ConsoleLogWriter();
+			using var fileLog = new FileLogWriter("Logs");
 
 			List<ILogWriter> listOfLogWriters = new List<ILogWriter> 
 			{ 
@@ -21,11 +19,11 @@ namespace L14_HomeWork
 				fileLog
 			};
 
-			var multiple = MultipleLogWriter.GetInstance();
-			multiple.LogWriters = listOfLogWriters;
+			MultipleLogWriter multiple = new MultipleLogWriter(listOfLogWriters);
 			multiple.LogInfo("There is some information from Multiple Log Writer!");
-			multiple.LogWarning("Warning!!!");
 			multiple.LogError("Error!!!");
+			multiple.LogWarning("Warning!!!");
+			
 		}
 	}
 }
