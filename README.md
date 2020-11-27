@@ -13,5 +13,5 @@ Some commands:
    git commit --amend --author=  
    git push  
    pwd - текущее расположение  
-   history -r - удалить историю текущей сессии
-   cat /dev/null > ~/.bash_history && history -c && exit - удалить историю Bash
+   history -r - удалить историю текущей сессии  
+   cat /dev/null > ~/.bash_history && history -c && exit - удалить историю Bash  
