@@ -23,7 +23,10 @@ namespace L15_HomeWork
 			multiple.LogInfo("There is some information from Multiple Log Writer!");
 			multiple.LogError("Error!!!");
 			multiple.LogWarning("Warning!!!");
-			
+
+			var factory = new LogWriterFactory();
+			factory.GetLogWriter(ConsoleLogWriter);
+
 		}
 	}
 }

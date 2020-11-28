@@ -6,12 +6,25 @@ namespace L15_HomeWork
 {
 	public class LogWriterFactory
 	{
-		public ILogWriter GetLogWriter<T>(object parameters) where T:ILogWriter
+		public LogWriterFactory() { };
+
+		public ILogWriter GetLogWriter<T>(object parameters, string fileName, List<ILogWriter> logWriters) where T:ILogWriter
 		{
-			ILogWriter writer;
-
-
-			return writer;
+			switch (parameters)
+			{
+				case 1:
+					return new ConsoleLogWriter();
+					break;
+				case 2:
+					return new FileLogWriter(fileName);
+					break;
+				case 3:
+					return new MultipleLogWriter(logWriters);
+					break;
+				default:
+					return new MultipleLogWriter(logWriters);
+					break;
+			}
 		}
 	}
 }
