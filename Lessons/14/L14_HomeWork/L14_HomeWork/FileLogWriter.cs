@@ -19,8 +19,7 @@ namespace L14_HomeWork
 			}
 			set
 			{
-				const string placement = @"B:\Git\it-nordic-school\Lessons\14\L14_HomeWork\Logs\";
-				_fileName = placement + value + ".txt";
+				_fileName = value + ".txt";
 			}	
 		}
 

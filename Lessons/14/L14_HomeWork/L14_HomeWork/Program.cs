@@ -11,7 +11,6 @@ namespace L14_HomeWork
 		static void Main()
 		{
 			var consoleLog = ConsoleLogWriter.GetInstance();
-
 			using var fileLog = FileLogWriter.GetInstance();
 			fileLog.FileName = "Logs";
 
@@ -23,6 +22,7 @@ namespace L14_HomeWork
 
 			var multiple = MultipleLogWriter.GetInstance();
 			multiple.LogWriters = listOfLogWriters;
+
 			multiple.LogInfo("There is some information from Multiple Log Writer!");
 			multiple.LogWarning("Warning!!!");
 			multiple.LogError("Error!!!");
