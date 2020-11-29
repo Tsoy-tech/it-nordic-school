@@ -8,7 +8,6 @@ namespace L13_HomeWork
 	public class ConsoleLogWriter : BaseLogWriter
 	{
 		public ConsoleLogWriter() {}
-		public ConsoleLogWriter(DateTimeOffset dateTime) : base(dateTime) { }
 
 		protected override void WriteLog(string line)
 		{

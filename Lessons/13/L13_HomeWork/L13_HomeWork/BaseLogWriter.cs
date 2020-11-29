@@ -13,38 +13,26 @@ namespace L13_HomeWork
 			Error
 		}
 
-		protected DateTimeOffset _dateOfLog;
-		protected MessageType _typeOfLog;
 		private string _format = "{0:yyyy-MM-dd HH:mm:ss %K}\t{1}\t{2}";
 
-		protected BaseLogWriter() 
-		{
-			_dateOfLog = DateTimeOffset.Now;
-		}
-		protected BaseLogWriter(DateTimeOffset dateTime) 
-		{
-			_dateOfLog = dateTime;
-		}
+		protected BaseLogWriter() { }
 
-		public virtual void LogInfo(string message) 
+		public virtual void LogInfo(string message)
 		{
-			_typeOfLog = MessageType.Info;
-			WriteLog(GetLog(message));
+			WriteLog(GetLog(MessageType.Info, message));
 		}
-		public virtual void LogWarning(string message) 
+		public virtual void LogWarning(string message)
 		{
-			_typeOfLog = MessageType.Warning;
-			WriteLog(GetLog(message));
+			WriteLog(GetLog(MessageType.Warning, message));
 		}
-		public virtual void LogError(string message) 
+		public virtual void LogError(string message)
 		{
-			_typeOfLog = MessageType.Error;
-			WriteLog(GetLog(message));
+			WriteLog(GetLog(MessageType.Error, message));
 		}
 		protected abstract void WriteLog(string line);
-		protected string GetLog(string message)
+		protected string GetLog(MessageType typeOfLog, string message)
 		{
-			return string.Format(_format, _dateOfLog, _typeOfLog, message);
+			return string.Format(_format, DateTimeOffset.Now, typeOfLog, message);
 		}
 	}
 }

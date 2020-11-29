@@ -18,17 +18,11 @@ namespace L13_HomeWork
 			}
 			set
 			{
-				const string placement = @"B:\Git\it-nordic-school\Lessons\13\L13_HomeWork\Logs\";
-				_fileName = placement + value + ".txt";
+				_fileName = value + ".txt";
 			}	
 		}
 
 		public FileLogWriter(string fileName)
-		{
-			FileName = fileName;
-			_logFileWriter = new StreamWriter(File.Open(_fileName, FileMode.Append, FileAccess.Write));
-		}
-		public FileLogWriter(string fileName, DateTimeOffset dateTime) : base(dateTime)
 		{
 			FileName = fileName;
 			_logFileWriter = new StreamWriter(File.Open(_fileName, FileMode.Append, FileAccess.Write));
