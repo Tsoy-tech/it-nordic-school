@@ -24,8 +24,9 @@ namespace L15_HomeWork
 			multiple.LogError("Error!!!");
 			multiple.LogWarning("Warning!!!");*/
 
-			FileLogWriter a = new FileLogWriter("asdasd");
-			var fileLog = TestFactory.GetLogWriter(a, "adasd");
+			//public delegate void create(ILogWriter a, List<ILogWriter>? b);
+
+			var fileLog = TestFactory.GetLogWriter(, "adasd");
 		}
 	}
 }

@@ -18,16 +18,21 @@ namespace L15_HomeWork
             if(anyClass is FileLogWriter)
             {
                 string fileName = (string)parameters;
-                return new FileLogWriter(fileName);
+                var obj = new FileLogWriter(fileName);
+                return obj;
             }
+
             if(anyClass is ConsoleLogWriter)
             {
-                return new ConsoleLogWriter();
+                var obj = new ConsoleLogWriter();
+                return obj;
             }
+
             if(anyClass is MultipleLogWriter)
             {
                 List<ILogWriter> listOfLogs = (List<ILogWriter>)parameters;
-                return new MultipleLogWriter(listOfLogs);
+                var obj = new MultipleLogWriter(listOfLogs);
+                return obj;
             }
 
             return null;
