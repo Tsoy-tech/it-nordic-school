@@ -10,7 +10,7 @@ namespace L15_HomeWork
 	{
 		static void Main()
 		{
-			var fileLog = LogWriterFactory.GetLogWriter<FileLogWriter>("Logs");
+			/*var fileLog = LogWriterFactory.GetLogWriter<FileLogWriter>("Logs");
 			var consoleLog = LogWriterFactory.GetLogWriter<ConsoleLogWriter>();
 
 			List<ILogWriter> listOfLogWriters = new List<ILogWriter>
@@ -22,7 +22,10 @@ namespace L15_HomeWork
 			var multiple = LogWriterFactory.GetLogWriter<MultipleLogWriter>(listOfLogWriters);
 			multiple.LogInfo("There is some information from Multiple Log Writer!");
 			multiple.LogError("Error!!!");
-			multiple.LogWarning("Warning!!!");
+			multiple.LogWarning("Warning!!!");*/
+
+			FileLogWriter a = new FileLogWriter("asdasd");
+			var fileLog = TestFactory.GetLogWriter(a, "adasd");
 		}
 	}
 }
