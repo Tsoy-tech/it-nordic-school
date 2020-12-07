@@ -8,24 +8,23 @@ namespace L15_HomeWork
 	public class FileLogWriter : BaseLogWriter, IDisposable
 	{
 		private StreamWriter _logFileWriter;
-		private string _fileName;
 
-		public string FileName 
+		private string FileName 
 		{
 			get 
 			{
-				return _fileName;
+				return FileName;
 			}
 			set
 			{
-				_fileName = value + ".txt";
+				FileName = value + ".txt";
 			}	
 		}
 
 		public FileLogWriter(string fileName)
 		{
 			FileName = fileName;
-			_logFileWriter = new StreamWriter(File.Open(_fileName, FileMode.Append, FileAccess.Write));
+			_logFileWriter = new StreamWriter(File.Open(FileName, FileMode.Append, FileAccess.Write));
 		}
 
 		protected override void WriteLog(string line)

@@ -5,34 +5,22 @@ namespace L15_HomeWork
 {
 	public class MultipleLogWriter : IDisposable, ILogWriter
 	{
-		private List<ILogWriter> _logWriters;
-
-		public List<ILogWriter> LogWriters
-		{
-			get
-			{
-				return _logWriters;
-			}
-			set
-			{
-				_logWriters = value;
-			}
-		}
+		private List<ILogWriter> LogWriters { get; set; }
 
 		public MultipleLogWriter() { }
 		public MultipleLogWriter(ILogWriter logWriter)
 		{
-			_logWriters = new List<ILogWriter>();
-			_logWriters.Add(logWriter);
+			LogWriters = new List<ILogWriter>();
+			LogWriters.Add(logWriter);
 		}
 		public MultipleLogWriter(List<ILogWriter> logWriters)
 		{
-			_logWriters = logWriters;
+			LogWriters = logWriters;
 		}
 
 		public void LogInfo(string message)
 		{
-			foreach (var writer in _logWriters)
+			foreach (var writer in LogWriters)
 			{
 				if (writer is FileLogWriter)
 				{
@@ -46,7 +34,7 @@ namespace L15_HomeWork
 		}
 		public void LogWarning(string message)
 		{
-			foreach (var writer in _logWriters)
+			foreach (var writer in LogWriters)
 			{
 				if (writer is FileLogWriter)
 				{
@@ -60,7 +48,7 @@ namespace L15_HomeWork
 		}
 		public void LogError(string message)
 		{
-			foreach (var writer in _logWriters)
+			foreach (var writer in LogWriters)
 			{
 				if (writer is FileLogWriter)
 				{
@@ -74,11 +62,11 @@ namespace L15_HomeWork
 		}
 		public void Dispose()
 		{
-			foreach (object writer in _logWriters)
+			foreach (object writer in LogWriters)
 			{
-				if (_logWriters is IDisposable)
+				if (LogWriters is IDisposable)
 				{
-					(_logWriters as IDisposable).Dispose();
+					(LogWriters as IDisposable).Dispose();
 				}
 			}
 		}
