@@ -2,6 +2,10 @@
 using Reminder.Storage.InMemory;
 using Reminder.Domain;
 using Reminder.Domain.Model;
+using Reminder.Sender.Telegram;
+using Telegram.Bot;
+using Reminder.Receiver.Telegram;
+using Reminder.Receiver.Core;
 
 namespace Reminder.TestApp
 {
@@ -9,13 +13,23 @@ namespace Reminder.TestApp
     {
         static void Main(string[] args)
         {
-            var storage = new InMemoryReminderStorage();
-            using var domain = new ReminderDomain(storage, TimeSpan.FromSeconds(1), TimeSpan.FromSeconds(1));//Dependency injection
+            const string token = "1467408776:AAGSGszyTCYYCTWTKu4PL_it029uC8X8hbs";
+            //botID = "1467408776"
 
-            var addReminderModel = new AddReminderModel(DateTimeOffset.Now.AddSeconds(2), "Hello World!", "@TestContact");
+            var storage = new InMemoryReminderStorage();
+            var sender = new TelegramReminderSender(token);
+            var receiver = new TelegramReminderReceiver(token);
+
+            using var domain = new ReminderDomain(storage, receiver, sender, TimeSpan.FromSeconds(1), TimeSpan.FromSeconds(1));//Dependency injection
+
+            var addReminderModel = new AddReminderModel(DateTimeOffset.Now.AddSeconds(2), "Hello World!", "1467408776");
+
             domain.SendingSucceeded += Domain_SendingSucceeded;
             domain.SendingFailed += Domain_SendingFailed;
-            domain.AddReminderModel(addReminderModel);
+            
+            //receiver.MessageReceived += ;
+
+            //domain.AddReminderModel(addReminderModel);
             domain.Run();
 
             Console.WriteLine("Domain logic running...");
@@ -27,7 +41,7 @@ namespace Reminder.TestApp
             Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.Write("Sending FAILED ");
             Console.ResetColor();
-            Console.Write($"Contact {e.Reminder.AccountId} can't receive message {e.Reminder.Message} at {e.Reminder.Date:f}");
+            Console.Write($"Contact {e.Reminder.AccountId} can't receive message {e.Reminder.Message} at {e.Reminder.Date:f}\n");
             Console.WriteLine();
         }
 
@@ -36,7 +50,7 @@ namespace Reminder.TestApp
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("Sending OK ");
             Console.ResetColor();
-            Console.Write($"Contact {e.Reminder.AccountId} received message {e.Reminder.Message} at {e.Reminder.Date:f}");
+            Console.Write($"Contact {e.Reminder.AccountId} received message {e.Reminder.Message} at {e.Reminder.Date:f}\n");
         }
     }
 }
