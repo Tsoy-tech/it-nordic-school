@@ -13,6 +13,13 @@ namespace Reminder.Domain.Model
 
 		public AddReminderModel() { }
 
+		public AddReminderModel(ReminderItem reminderItem)
+		{
+			Date = reminderItem.Date;
+			Message = reminderItem.Message;
+			AccountId = reminderItem.AccountId;
+		}
+
 		public AddReminderModel(DateTimeOffset date, string message, string accountId)
 		{
 			Date = date;

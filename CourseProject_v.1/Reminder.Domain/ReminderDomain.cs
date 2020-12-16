@@ -22,8 +22,15 @@ namespace Reminder.Domain
         private Timer _awaitingReminderCheckTimer; //using for Method Run
         private Timer _readyReminderSendTimer;
 
+  
+
+        public event EventHandler<ParsingFailedEventArgs> ParsingFailed;
+
         public event EventHandler<SendingSucceededEventArgs> SendingSucceeded;
         public event EventHandler<SendingFailedEventArgs> SendingFailed;
+
+        public event EventHandler<AddingSucceededEventArgs> AddingSucceeded;
+        public event EventHandler<AddingFailedEventArgs> AddingFailed;
 
         public ReminderDomain(IReminderStorage storage, IReminderReceiver receiver, IReminderSender sender) : this(storage, receiver, sender, TimeSpan.FromMinutes(1), TimeSpan.FromMinutes(1)) { }
         public ReminderDomain( IReminderStorage storage, IReminderReceiver receiver, IReminderSender sender, TimeSpan awaitingRemindersCheckingPeriod, TimeSpan readyReminderCheckPeriod)
@@ -87,18 +94,25 @@ namespace Reminder.Domain
         private void ReceiverOnMessageReceived(object sender, MessageReceivedEventArgs e)
         {
             var o = MessageParser.Parse(e.Message);
-
             if(o == null)
             {
-                //AddingFail
+                ParsingFailed?.Invoke(this, new ParsingFailedEventArgs(e.AccountID, e.Message));
 
                 return;
             }
 
             var item = new ReminderItem(o.Date, o.Message, e.AccountID);
-            _storage.Add(item);
 
-            //AddingSucceeded
+			try
+			{
+                _storage.Add(item);
+
+                AddingSucceeded?.Invoke(this, new AddingSucceededEventArgs(new AddReminderModel(item)));
+			}
+            catch(Exception exception)
+			{
+                AddingFailed?.Invoke(this, new AddingFailedEventArgs(new AddReminderModel(item), exception));
+			}
         }
 
         public void Dispose()

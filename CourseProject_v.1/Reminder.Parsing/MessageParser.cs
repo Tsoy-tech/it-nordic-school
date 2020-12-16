@@ -6,10 +6,11 @@ namespace Reminder.Parsing
     {
         public static ParsedMessage Parse(string input)
         {
-            DateTimeOffset date;
+            
             if (string.IsNullOrWhiteSpace(input))
                 return null;
-
+            
+            DateTimeOffset date;
             int spaceIndex = input.IndexOf(' ');
             string sourceMessage = input.Trim();
             string potentialDate = sourceMessage.Substring(0, spaceIndex);
