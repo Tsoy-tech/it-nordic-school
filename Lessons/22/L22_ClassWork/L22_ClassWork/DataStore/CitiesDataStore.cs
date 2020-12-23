@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace L22_ClassWork.DataStore
 {
-    public class CitiesDataStore
+    public class CitiesDataStore : ICitiesDataStore
     {
         public List<City> Cities { get; set; }
 

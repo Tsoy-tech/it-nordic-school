@@ -1,3 +1,4 @@
+using L22_ClassWork.DataStore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,6 +18,9 @@ namespace L22_ClassWork
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Cities API", Version = "V1"});
             });
+
+            ICitiesDataStore dataStoreService = new CitiesDataStore();
+            services.AddSingleton(dataStoreService);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

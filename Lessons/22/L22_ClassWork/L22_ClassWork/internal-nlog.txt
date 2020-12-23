@@ -1,0 +1,20 @@
+2020-12-23 22:01:18.2534 Info Message Template Auto Format enabled
+2020-12-23 22:01:18.2738 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-23 22:01:18.3314 Info Adding target FileTarget(Name=allfile)
+2020-12-23 22:01:18.3314 Info Adding target FileTarget(Name=ownFile-web)
+2020-12-23 22:01:18.3785 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=C:\Users\User\Desktop\Git\it-nordic-school\Lessons\22\L22_ClassWork\L22_ClassWork\bin\Debug\netcoreapp3.1\nlog.config
+2020-12-23 22:12:20.4293 Info Message Template Auto Format enabled
+2020-12-23 22:12:20.4565 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-23 22:12:20.5133 Info Adding target FileTarget(Name=allfile)
+2020-12-23 22:12:20.5208 Info Adding target FileTarget(Name=ownFile-web)
+2020-12-23 22:12:20.5584 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=C:\Users\User\Desktop\Git\it-nordic-school\Lessons\22\L22_ClassWork\L22_ClassWork\bin\Debug\netcoreapp3.1\nlog.config
+2020-12-23 22:14:25.4114 Info Message Template Auto Format enabled
+2020-12-23 22:14:25.4278 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-23 22:14:25.4962 Info Adding target FileTarget(Name=allfile)
+2020-12-23 22:14:25.5064 Info Adding target FileTarget(Name=ownFile-web)
+2020-12-23 22:14:25.5428 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=C:\Users\User\Desktop\Git\it-nordic-school\Lessons\22\L22_ClassWork\L22_ClassWork\bin\Debug\netcoreapp3.1\nlog.config
+2020-12-23 22:19:42.2790 Info Message Template Auto Format enabled
+2020-12-23 22:19:42.2918 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-23 22:19:42.3574 Info Adding target FileTarget(Name=allfile)
+2020-12-23 22:19:42.3649 Info Adding target FileTarget(Name=ownFile-web)
+2020-12-23 22:19:42.4004 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=C:\Users\User\Desktop\Git\it-nordic-school\Lessons\22\L22_ClassWork\L22_ClassWork\bin\Debug\netcoreapp3.1\nlog.config
