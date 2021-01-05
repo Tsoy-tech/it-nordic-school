@@ -1,0 +1,625 @@
+2020-12-23 22:01:18.2534 Info Message Template Auto Format enabled
+2020-12-23 22:01:18.2738 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-23 22:01:18.3314 Info Adding target FileTarget(Name=allfile)
+2020-12-23 22:01:18.3314 Info Adding target FileTarget(Name=ownFile-web)
+2020-12-23 22:01:18.3785 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=C:\Users\User\Desktop\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2020-12-23 22:12:20.4293 Info Message Template Auto Format enabled
+2020-12-23 22:12:20.4565 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-23 22:12:20.5133 Info Adding target FileTarget(Name=allfile)
+2020-12-23 22:12:20.5208 Info Adding target FileTarget(Name=ownFile-web)
+2020-12-23 22:12:20.5584 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=C:\Users\User\Desktop\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2020-12-23 22:14:25.4114 Info Message Template Auto Format enabled
+2020-12-23 22:14:25.4278 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-23 22:14:25.4962 Info Adding target FileTarget(Name=allfile)
+2020-12-23 22:14:25.5064 Info Adding target FileTarget(Name=ownFile-web)
+2020-12-23 22:14:25.5428 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=C:\Users\User\Desktop\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2020-12-23 22:19:42.2790 Info Message Template Auto Format enabled
+2020-12-23 22:19:42.2918 Info Loading assembly: NLog.Web.AspNetCore
+2020-12-23 22:19:42.3574 Info Adding target FileTarget(Name=allfile)
+2020-12-23 22:19:42.3649 Info Adding target FileTarget(Name=ownFile-web)
+2020-12-23 22:19:42.4004 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=C:\Users\User\Desktop\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 15:43:32.8765 Info Message Template Auto Format enabled
+2021-01-01 15:43:32.9066 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 15:43:32.9677 Info Adding target FileTarget(Name=allfile)
+2021-01-01 15:43:32.9841 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 15:43:33.0329 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 15:46:50.1504 Info Message Template Auto Format enabled
+2021-01-01 15:46:50.1663 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 15:46:50.2165 Info Adding target FileTarget(Name=allfile)
+2021-01-01 15:46:50.2270 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 15:46:50.2616 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 15:47:41.7664 Info Message Template Auto Format enabled
+2021-01-01 15:47:41.7828 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 15:47:41.8298 Info Adding target FileTarget(Name=allfile)
+2021-01-01 15:47:41.8405 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 15:47:41.8723 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 15:47:56.2558 Info Message Template Auto Format enabled
+2021-01-01 15:47:56.2701 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 15:47:56.3127 Info Adding target FileTarget(Name=allfile)
+2021-01-01 15:47:56.3223 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 15:47:56.3504 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 15:49:28.7314 Info Message Template Auto Format enabled
+2021-01-01 15:49:28.7479 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 15:49:28.7959 Info Adding target FileTarget(Name=allfile)
+2021-01-01 15:49:28.8069 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 15:49:28.8379 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 15:49:57.3419 Info Message Template Auto Format enabled
+2021-01-01 15:49:57.3588 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 15:49:57.4125 Info Adding target FileTarget(Name=allfile)
+2021-01-01 15:49:57.4240 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 15:49:57.4604 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 15:51:08.7872 Info Message Template Auto Format enabled
+2021-01-01 15:51:08.7972 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 15:51:08.8290 Info Adding target FileTarget(Name=allfile)
+2021-01-01 15:51:08.8290 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 15:51:08.8563 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 15:51:22.5464 Info Message Template Auto Format enabled
+2021-01-01 15:51:22.5561 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 15:51:22.5891 Info Adding target FileTarget(Name=allfile)
+2021-01-01 15:51:22.5891 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 15:51:22.6179 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 15:51:33.6912 Info Message Template Auto Format enabled
+2021-01-01 15:51:33.7002 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 15:51:33.7304 Info Adding target FileTarget(Name=allfile)
+2021-01-01 15:51:33.7304 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 15:51:33.7554 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 15:53:18.4917 Info Message Template Auto Format enabled
+2021-01-01 15:53:18.5073 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 15:53:18.5576 Info Adding target FileTarget(Name=allfile)
+2021-01-01 15:53:18.5576 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 15:53:18.6068 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 15:54:20.4758 Info Message Template Auto Format enabled
+2021-01-01 15:54:20.4944 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 15:54:20.5459 Info Adding target FileTarget(Name=allfile)
+2021-01-01 15:54:20.5570 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 15:54:20.5913 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 15:56:06.6377 Info Message Template Auto Format enabled
+2021-01-01 15:56:06.6560 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 15:56:06.7076 Info Adding target FileTarget(Name=allfile)
+2021-01-01 15:56:06.7192 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 15:56:06.7517 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 15:57:10.7252 Info Message Template Auto Format enabled
+2021-01-01 15:57:10.7430 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 15:57:10.8018 Info Adding target FileTarget(Name=allfile)
+2021-01-01 15:57:10.8134 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 15:57:10.8463 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 15:58:05.6521 Info Message Template Auto Format enabled
+2021-01-01 15:58:05.6665 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 15:58:05.7085 Info Adding target FileTarget(Name=allfile)
+2021-01-01 15:58:05.7184 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 15:58:05.7465 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 15:59:37.2352 Info Message Template Auto Format enabled
+2021-01-01 15:59:37.2449 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 15:59:37.2813 Info Adding target FileTarget(Name=allfile)
+2021-01-01 15:59:37.2879 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 15:59:37.5250 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:00:19.1787 Info Message Template Auto Format enabled
+2021-01-01 16:00:19.2011 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:00:19.2500 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:00:19.2606 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:00:19.2974 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:01:01.6879 Info Message Template Auto Format enabled
+2021-01-01 16:01:01.7043 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:01:01.7533 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:01:01.7650 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:01:01.7984 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:05:11.6421 Info Message Template Auto Format enabled
+2021-01-01 16:05:11.6611 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:05:11.7228 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:05:11.7363 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:05:11.7759 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:05:30.9914 Info Message Template Auto Format enabled
+2021-01-01 16:05:31.0072 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:05:31.0572 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:05:31.0700 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:05:31.1058 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:07:42.1976 Info Message Template Auto Format enabled
+2021-01-01 16:07:42.2135 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:07:42.2667 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:07:42.2775 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:07:42.3147 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:08:03.3317 Info Message Template Auto Format enabled
+2021-01-01 16:08:03.3487 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:08:03.4053 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:08:03.4162 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:08:03.4484 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:09:19.5101 Info Message Template Auto Format enabled
+2021-01-01 16:09:19.5295 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:09:19.5898 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:09:19.6031 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:09:19.6449 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:09:35.2719 Info Message Template Auto Format enabled
+2021-01-01 16:09:35.2884 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:09:35.3462 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:09:35.3588 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:09:35.3975 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:09:59.7983 Info Message Template Auto Format enabled
+2021-01-01 16:09:59.8223 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:09:59.8826 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:09:59.8826 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:09:59.9305 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:10:22.5135 Info Message Template Auto Format enabled
+2021-01-01 16:10:22.5308 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:10:22.5782 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:10:22.5887 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:10:22.6256 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:10:41.1964 Info Message Template Auto Format enabled
+2021-01-01 16:10:41.2132 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:10:41.2748 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:10:41.2748 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:10:41.3247 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:11:21.1283 Info Message Template Auto Format enabled
+2021-01-01 16:11:21.1440 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:11:21.1875 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:11:21.1973 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:11:21.2260 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:16:30.6175 Info Shutdown() called. Logger closing...
+2021-01-01 16:16:30.6175 Info Closing old configuration.
+2021-01-01 16:16:30.6175 Info Logger has been closed down.
+2021-01-01 16:16:30.6385 Info AppDomain Shutting down. Logger closing...
+2021-01-01 16:16:30.6385 Info Logger has been shut down.
+2021-01-01 16:16:44.5546 Info Message Template Auto Format enabled
+2021-01-01 16:16:44.5692 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:16:44.6128 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:16:44.6227 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:16:44.6517 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:19:22.6250 Info Message Template Auto Format enabled
+2021-01-01 16:19:22.6435 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:19:22.6973 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:19:22.6973 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:19:22.7507 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:21:13.4750 Info Message Template Auto Format enabled
+2021-01-01 16:21:13.4918 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:21:13.5460 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:21:13.5576 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:21:13.5939 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:21:31.6777 Info Message Template Auto Format enabled
+2021-01-01 16:21:31.6924 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:21:31.7406 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:21:31.7518 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:21:31.7862 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:21:55.4166 Info Message Template Auto Format enabled
+2021-01-01 16:21:55.4316 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:21:55.4797 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:21:55.4797 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:21:55.5200 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:22:15.5659 Info Message Template Auto Format enabled
+2021-01-01 16:22:15.5804 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:22:15.6233 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:22:15.6327 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:22:15.6610 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:23:47.8303 Info Message Template Auto Format enabled
+2021-01-01 16:23:47.8478 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:23:47.8976 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:23:47.8976 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:23:47.9492 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:29:46.4586 Info Message Template Auto Format enabled
+2021-01-01 16:29:46.4737 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:29:46.5169 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:29:46.5271 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:29:46.5599 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:34:35.6532 Info Message Template Auto Format enabled
+2021-01-01 16:34:35.6690 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:34:35.7171 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:34:35.7274 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:34:35.7590 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:37:13.2110 Info Message Template Auto Format enabled
+2021-01-01 16:37:13.2286 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:37:13.2797 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:37:13.2911 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:37:13.3229 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:38:36.9067 Info Message Template Auto Format enabled
+2021-01-01 16:38:36.9207 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:38:36.9646 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:38:36.9646 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:38:37.0045 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:46:13.3546 Info Message Template Auto Format enabled
+2021-01-01 16:46:13.3692 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:46:13.4179 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:46:13.4286 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:46:13.4692 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 16:53:45.5806 Info Message Template Auto Format enabled
+2021-01-01 16:53:45.5971 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 16:53:45.6459 Info Adding target FileTarget(Name=allfile)
+2021-01-01 16:53:45.6564 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 16:53:45.6892 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 17:08:48.1280 Info Message Template Auto Format enabled
+2021-01-01 17:08:48.1443 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 17:08:48.1916 Info Adding target FileTarget(Name=allfile)
+2021-01-01 17:08:48.2086 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 17:08:48.2476 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 17:09:16.3527 Info Message Template Auto Format enabled
+2021-01-01 17:09:16.3691 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 17:09:16.4303 Info Adding target FileTarget(Name=allfile)
+2021-01-01 17:09:16.4303 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 17:09:16.4783 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 17:15:36.5301 Info Message Template Auto Format enabled
+2021-01-01 17:15:36.5460 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 17:15:36.5908 Info Adding target FileTarget(Name=allfile)
+2021-01-01 17:15:36.6031 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 17:15:36.6368 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 17:21:37.8927 Info Message Template Auto Format enabled
+2021-01-01 17:21:37.9080 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 17:21:37.9552 Info Adding target FileTarget(Name=allfile)
+2021-01-01 17:21:37.9660 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 17:21:37.9957 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 17:22:17.6638 Info Message Template Auto Format enabled
+2021-01-01 17:22:17.6799 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 17:22:17.7240 Info Adding target FileTarget(Name=allfile)
+2021-01-01 17:22:17.7343 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 17:22:17.7642 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 17:54:38.7207 Info Message Template Auto Format enabled
+2021-01-01 17:54:38.7359 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 17:54:38.7825 Info Adding target FileTarget(Name=allfile)
+2021-01-01 17:54:38.7923 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 17:54:38.8223 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 18:09:32.3325 Info Message Template Auto Format enabled
+2021-01-01 18:09:32.3499 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 18:09:32.3984 Info Adding target FileTarget(Name=allfile)
+2021-01-01 18:09:32.3984 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 18:09:32.4456 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 18:10:33.2708 Info Message Template Auto Format enabled
+2021-01-01 18:10:33.2859 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 18:10:33.3310 Info Adding target FileTarget(Name=allfile)
+2021-01-01 18:10:33.3410 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 18:10:33.3702 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 18:46:50.4690 Info Message Template Auto Format enabled
+2021-01-01 18:46:50.4853 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 18:46:50.5357 Info Adding target FileTarget(Name=allfile)
+2021-01-01 18:46:50.5512 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 18:46:50.5887 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 18:47:13.2788 Info Message Template Auto Format enabled
+2021-01-01 18:47:13.2941 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 18:47:13.3472 Info Adding target FileTarget(Name=allfile)
+2021-01-01 18:47:13.3578 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 18:47:13.3894 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 18:49:11.1450 Info Message Template Auto Format enabled
+2021-01-01 18:49:11.1596 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 18:49:11.2185 Info Adding target FileTarget(Name=allfile)
+2021-01-01 18:49:11.2307 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 18:49:11.2654 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 18:49:33.3800 Info Message Template Auto Format enabled
+2021-01-01 18:49:33.3969 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 18:49:33.4461 Info Adding target FileTarget(Name=allfile)
+2021-01-01 18:49:33.4461 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 18:49:33.4928 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 18:51:15.4008 Info Message Template Auto Format enabled
+2021-01-01 18:51:15.4165 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 18:51:15.4666 Info Adding target FileTarget(Name=allfile)
+2021-01-01 18:51:15.4788 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 18:51:15.5162 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 19:04:18.8060 Info Message Template Auto Format enabled
+2021-01-01 19:04:18.8276 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 19:04:18.8860 Info Adding target FileTarget(Name=allfile)
+2021-01-01 19:04:18.8982 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 19:04:18.9373 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 19:29:47.1721 Info Message Template Auto Format enabled
+2021-01-01 19:29:47.1925 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 19:29:47.2545 Info Adding target FileTarget(Name=allfile)
+2021-01-01 19:29:47.2678 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 19:29:47.3044 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 19:37:18.6689 Info Message Template Auto Format enabled
+2021-01-01 19:37:18.6846 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 19:37:18.7341 Info Adding target FileTarget(Name=allfile)
+2021-01-01 19:37:18.7445 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 19:37:18.7751 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 19:37:39.4117 Info Message Template Auto Format enabled
+2021-01-01 19:37:39.4287 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 19:37:39.4835 Info Adding target FileTarget(Name=allfile)
+2021-01-01 19:37:39.4952 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 19:37:39.5293 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 19:45:32.8642 Info Message Template Auto Format enabled
+2021-01-01 19:45:32.8829 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 19:45:32.9472 Info Adding target FileTarget(Name=allfile)
+2021-01-01 19:45:32.9616 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 19:45:33.0050 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 19:50:17.7595 Info Message Template Auto Format enabled
+2021-01-01 19:50:17.7770 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 19:50:17.8264 Info Adding target FileTarget(Name=allfile)
+2021-01-01 19:50:17.8381 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 19:50:17.8713 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 19:53:18.4191 Info Message Template Auto Format enabled
+2021-01-01 19:53:18.4343 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 19:53:18.4886 Info Adding target FileTarget(Name=allfile)
+2021-01-01 19:53:18.5011 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 19:53:18.5405 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 19:54:35.3240 Info Message Template Auto Format enabled
+2021-01-01 19:54:35.3419 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 19:54:35.3931 Info Adding target FileTarget(Name=allfile)
+2021-01-01 19:54:35.4039 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 19:54:35.4370 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 19:55:32.4425 Info Message Template Auto Format enabled
+2021-01-01 19:55:32.4585 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 19:55:32.5097 Info Adding target FileTarget(Name=allfile)
+2021-01-01 19:55:32.5097 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 19:55:32.5527 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 19:57:33.9708 Info Message Template Auto Format enabled
+2021-01-01 19:57:33.9894 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 19:57:34.0463 Info Adding target FileTarget(Name=allfile)
+2021-01-01 19:57:34.0594 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 19:57:34.0957 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 19:58:48.4616 Info Message Template Auto Format enabled
+2021-01-01 19:58:48.4880 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 19:58:48.5412 Info Adding target FileTarget(Name=allfile)
+2021-01-01 19:58:48.5538 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 19:58:48.5903 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 20:01:18.9474 Info Message Template Auto Format enabled
+2021-01-01 20:01:18.9641 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 20:01:19.0124 Info Adding target FileTarget(Name=allfile)
+2021-01-01 20:01:19.0226 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 20:01:19.0616 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 20:04:56.3065 Info Message Template Auto Format enabled
+2021-01-01 20:04:56.3254 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 20:04:56.3898 Info Adding target FileTarget(Name=allfile)
+2021-01-01 20:04:56.4032 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 20:04:56.4434 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 20:06:26.9845 Info Message Template Auto Format enabled
+2021-01-01 20:06:27.0056 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 20:06:27.0646 Info Adding target FileTarget(Name=allfile)
+2021-01-01 20:06:27.0762 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 20:06:27.1149 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 20:11:46.1140 Info Message Template Auto Format enabled
+2021-01-01 20:11:46.1302 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 20:11:46.1819 Info Adding target FileTarget(Name=allfile)
+2021-01-01 20:11:46.1819 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 20:11:46.2286 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 20:17:27.7401 Info Message Template Auto Format enabled
+2021-01-01 20:17:27.7589 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 20:17:27.8210 Info Adding target FileTarget(Name=allfile)
+2021-01-01 20:17:27.8210 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 20:17:27.8693 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 20:25:39.6078 Info Message Template Auto Format enabled
+2021-01-01 20:25:39.6254 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 20:25:39.6763 Info Adding target FileTarget(Name=allfile)
+2021-01-01 20:25:39.6880 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 20:25:39.7217 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 20:31:12.3318 Info Message Template Auto Format enabled
+2021-01-01 20:31:12.3488 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 20:31:12.4150 Info Adding target FileTarget(Name=allfile)
+2021-01-01 20:31:12.4292 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 20:31:12.4717 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 20:36:39.2508 Info Message Template Auto Format enabled
+2021-01-01 20:36:39.2693 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 20:36:39.3214 Info Adding target FileTarget(Name=allfile)
+2021-01-01 20:36:39.3214 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 20:36:39.3704 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 20:39:13.9420 Info Message Template Auto Format enabled
+2021-01-01 20:39:13.9576 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 20:39:14.0063 Info Adding target FileTarget(Name=allfile)
+2021-01-01 20:39:14.0192 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 20:39:14.0632 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 20:40:37.6128 Info Message Template Auto Format enabled
+2021-01-01 20:40:37.6291 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 20:40:37.6777 Info Adding target FileTarget(Name=allfile)
+2021-01-01 20:40:37.6890 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 20:40:37.7212 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 20:42:12.4129 Info Message Template Auto Format enabled
+2021-01-01 20:42:12.4293 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 20:42:12.4819 Info Adding target FileTarget(Name=allfile)
+2021-01-01 20:42:12.4933 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 20:42:12.5293 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 20:43:22.8196 Info Message Template Auto Format enabled
+2021-01-01 20:43:22.8355 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 20:43:22.8852 Info Adding target FileTarget(Name=allfile)
+2021-01-01 20:43:22.8852 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 20:43:22.9383 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 22:03:32.3763 Info Message Template Auto Format enabled
+2021-01-01 22:03:32.3931 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 22:03:32.4449 Info Adding target FileTarget(Name=allfile)
+2021-01-01 22:03:32.4449 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 22:03:32.4899 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 22:32:45.2323 Info Message Template Auto Format enabled
+2021-01-01 22:32:45.2520 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 22:32:45.3128 Info Adding target FileTarget(Name=allfile)
+2021-01-01 22:32:45.3261 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 22:32:45.3649 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 22:33:55.4278 Info Message Template Auto Format enabled
+2021-01-01 22:33:55.4440 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 22:33:55.5087 Info Adding target FileTarget(Name=allfile)
+2021-01-01 22:33:55.5221 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 22:33:55.5560 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 22:42:15.6420 Info Message Template Auto Format enabled
+2021-01-01 22:42:15.6697 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 22:42:15.7347 Info Adding target FileTarget(Name=allfile)
+2021-01-01 22:42:15.7477 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 22:42:15.7853 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 22:44:45.0948 Info Message Template Auto Format enabled
+2021-01-01 22:44:45.1249 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 22:44:45.1888 Info Adding target FileTarget(Name=allfile)
+2021-01-01 22:44:45.2022 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 22:44:45.2390 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 22:45:13.2622 Info Message Template Auto Format enabled
+2021-01-01 22:45:13.2839 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 22:45:13.3501 Info Adding target FileTarget(Name=allfile)
+2021-01-01 22:45:13.3624 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 22:45:13.3998 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 22:54:59.5098 Info Message Template Auto Format enabled
+2021-01-01 22:54:59.5307 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 22:54:59.5890 Info Adding target FileTarget(Name=allfile)
+2021-01-01 22:54:59.6010 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 22:54:59.6384 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 22:57:54.2588 Info Message Template Auto Format enabled
+2021-01-01 22:57:54.2757 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 22:57:54.3258 Info Adding target FileTarget(Name=allfile)
+2021-01-01 22:57:54.3362 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 22:57:54.3784 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 23:01:00.1106 Info Message Template Auto Format enabled
+2021-01-01 23:01:00.1286 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 23:01:00.1826 Info Adding target FileTarget(Name=allfile)
+2021-01-01 23:01:00.1952 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 23:01:00.2297 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 23:02:24.7951 Info Message Template Auto Format enabled
+2021-01-01 23:02:24.8164 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 23:02:24.8672 Info Adding target FileTarget(Name=allfile)
+2021-01-01 23:02:24.8672 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 23:02:24.9129 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 23:04:43.0022 Info Message Template Auto Format enabled
+2021-01-01 23:04:43.0202 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 23:04:43.0769 Info Adding target FileTarget(Name=allfile)
+2021-01-01 23:04:43.0901 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 23:04:43.1245 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 23:06:04.0115 Info Message Template Auto Format enabled
+2021-01-01 23:06:04.0281 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 23:06:04.0751 Info Adding target FileTarget(Name=allfile)
+2021-01-01 23:06:04.0859 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 23:06:04.1173 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 23:08:47.8855 Info Message Template Auto Format enabled
+2021-01-01 23:08:47.9008 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 23:08:47.9467 Info Adding target FileTarget(Name=allfile)
+2021-01-01 23:08:47.9467 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 23:08:47.9925 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 23:15:16.5755 Info Message Template Auto Format enabled
+2021-01-01 23:15:16.5932 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 23:15:16.6440 Info Adding target FileTarget(Name=allfile)
+2021-01-01 23:15:16.6563 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 23:15:16.6932 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 23:20:29.2718 Info Message Template Auto Format enabled
+2021-01-01 23:20:29.2898 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 23:20:29.3482 Info Adding target FileTarget(Name=allfile)
+2021-01-01 23:20:29.3594 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 23:20:29.3927 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 23:25:31.5486 Info Message Template Auto Format enabled
+2021-01-01 23:25:31.5656 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 23:25:31.6163 Info Adding target FileTarget(Name=allfile)
+2021-01-01 23:25:31.6163 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 23:25:31.6579 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 23:42:33.0772 Info Message Template Auto Format enabled
+2021-01-01 23:42:33.0996 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 23:42:33.1603 Info Adding target FileTarget(Name=allfile)
+2021-01-01 23:42:33.1733 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 23:42:33.2100 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 23:43:22.3562 Info Message Template Auto Format enabled
+2021-01-01 23:43:22.3797 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 23:43:22.4399 Info Adding target FileTarget(Name=allfile)
+2021-01-01 23:43:22.4525 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 23:43:22.4922 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-01 23:44:10.5490 Info Message Template Auto Format enabled
+2021-01-01 23:44:10.5657 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-01 23:44:10.6146 Info Adding target FileTarget(Name=allfile)
+2021-01-01 23:44:10.6252 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-01 23:44:10.6786 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 00:05:49.4146 Info Message Template Auto Format enabled
+2021-01-02 00:05:49.4325 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 00:05:49.4900 Info Adding target FileTarget(Name=allfile)
+2021-01-02 00:05:49.5025 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 00:05:49.5385 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 00:10:17.5912 Info Message Template Auto Format enabled
+2021-01-02 00:10:17.6113 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 00:10:17.6654 Info Adding target FileTarget(Name=allfile)
+2021-01-02 00:10:17.6654 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 00:10:17.7125 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 00:18:00.3549 Info Message Template Auto Format enabled
+2021-01-02 00:18:00.3754 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 00:18:00.4363 Info Adding target FileTarget(Name=allfile)
+2021-01-02 00:18:00.4492 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 00:18:00.4851 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 09:20:04.9493 Info Message Template Auto Format enabled
+2021-01-02 09:20:04.9762 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 09:20:05.0378 Info Adding target FileTarget(Name=allfile)
+2021-01-02 09:20:05.0566 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 09:20:05.0972 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 09:32:43.2577 Info Message Template Auto Format enabled
+2021-01-02 09:32:43.2746 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 09:32:43.3357 Info Adding target FileTarget(Name=allfile)
+2021-01-02 09:32:43.3357 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 09:32:43.3785 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 09:34:18.4806 Info Message Template Auto Format enabled
+2021-01-02 09:34:18.4960 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 09:34:18.5435 Info Adding target FileTarget(Name=allfile)
+2021-01-02 09:34:18.5540 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 09:34:18.5864 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 09:50:18.5276 Info Message Template Auto Format enabled
+2021-01-02 09:50:18.5454 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 09:50:18.6001 Info Adding target FileTarget(Name=allfile)
+2021-01-02 09:50:18.6001 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 09:50:18.6474 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 10:01:23.0773 Info Message Template Auto Format enabled
+2021-01-02 10:01:23.0989 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 10:01:23.1552 Info Adding target FileTarget(Name=allfile)
+2021-01-02 10:01:23.1690 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 10:01:23.2072 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 10:03:38.3869 Info Message Template Auto Format enabled
+2021-01-02 10:03:38.4094 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 10:03:38.4675 Info Adding target FileTarget(Name=allfile)
+2021-01-02 10:03:38.4831 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 10:03:38.5296 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 10:04:49.1218 Info Message Template Auto Format enabled
+2021-01-02 10:04:49.1403 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 10:04:49.1912 Info Adding target FileTarget(Name=allfile)
+2021-01-02 10:04:49.2016 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 10:04:49.2348 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 10:05:34.7149 Info Message Template Auto Format enabled
+2021-01-02 10:05:34.7349 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 10:05:34.7942 Info Adding target FileTarget(Name=allfile)
+2021-01-02 10:05:34.8084 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 10:05:34.8423 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 10:07:24.3629 Info Message Template Auto Format enabled
+2021-01-02 10:07:24.3802 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 10:07:24.4245 Info Adding target FileTarget(Name=allfile)
+2021-01-02 10:07:24.4365 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 10:07:24.4696 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 10:08:46.3362 Info Message Template Auto Format enabled
+2021-01-02 10:08:46.3511 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 10:08:46.3991 Info Adding target FileTarget(Name=allfile)
+2021-01-02 10:08:46.3991 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 10:08:46.4467 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 10:11:55.1586 Info Message Template Auto Format enabled
+2021-01-02 10:11:55.1769 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 10:11:55.2363 Info Adding target FileTarget(Name=allfile)
+2021-01-02 10:11:55.2487 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 10:11:55.2904 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 10:16:25.0638 Info Message Template Auto Format enabled
+2021-01-02 10:16:25.0799 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 10:16:25.1280 Info Adding target FileTarget(Name=allfile)
+2021-01-02 10:16:25.1384 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 10:16:25.1700 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 10:17:27.0085 Info Message Template Auto Format enabled
+2021-01-02 10:17:27.0295 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 10:17:27.0851 Info Adding target FileTarget(Name=allfile)
+2021-01-02 10:17:27.0851 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 10:17:27.1427 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 10:19:52.3752 Info Message Template Auto Format enabled
+2021-01-02 10:19:52.3940 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 10:19:52.4425 Info Adding target FileTarget(Name=allfile)
+2021-01-02 10:19:52.4556 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 10:19:52.4912 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 10:22:05.4987 Info Message Template Auto Format enabled
+2021-01-02 10:22:05.5204 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 10:22:05.5843 Info Adding target FileTarget(Name=allfile)
+2021-01-02 10:22:05.5976 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 10:22:05.6465 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 10:56:22.6890 Info Message Template Auto Format enabled
+2021-01-02 10:56:22.7113 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 10:56:22.7694 Info Adding target FileTarget(Name=allfile)
+2021-01-02 10:56:22.7808 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 10:56:22.8140 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 11:51:50.5860 Info Message Template Auto Format enabled
+2021-01-02 11:51:50.6056 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 11:51:50.6676 Info Adding target FileTarget(Name=allfile)
+2021-01-02 11:51:50.6806 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 11:51:50.7277 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\22\L22_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 11:59:23.7360 Info Message Template Auto Format enabled
+2021-01-02 11:59:23.7623 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 11:59:23.8343 Info Adding target FileTarget(Name=allfile)
+2021-01-02 11:59:23.8494 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 11:59:23.8956 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\23\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-02 11:59:46.0250 Info Message Template Auto Format enabled
+2021-01-02 11:59:46.0437 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-02 11:59:46.1052 Info Adding target FileTarget(Name=allfile)
+2021-01-02 11:59:46.1234 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-02 11:59:46.1630 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\23\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-05 17:10:00.3864 Info Message Template Auto Format enabled
+2021-01-05 17:10:00.4114 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-05 17:10:00.4680 Info Adding target FileTarget(Name=allfile)
+2021-01-05 17:10:00.4907 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-05 17:10:00.5302 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\23\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-05 17:13:19.0217 Info Message Template Auto Format enabled
+2021-01-05 17:13:19.0391 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-05 17:13:19.0928 Info Adding target FileTarget(Name=allfile)
+2021-01-05 17:13:19.1038 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-05 17:13:19.1373 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\23\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
+2021-01-05 17:14:56.7426 Info Message Template Auto Format enabled
+2021-01-05 17:14:56.7593 Info Loading assembly: NLog.Web.AspNetCore
+2021-01-05 17:14:56.8139 Info Adding target FileTarget(Name=allfile)
+2021-01-05 17:14:56.8281 Info Adding target FileTarget(Name=ownFile-web)
+2021-01-05 17:14:56.8656 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=B:\Git\it-nordic-school\Lessons\23\L23_HomeWork\L23_HomeWork\bin\Debug\netcoreapp3.1\nlog.config
