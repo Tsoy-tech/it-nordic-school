@@ -33,12 +33,12 @@ namespace Reminder.Domain
         public event EventHandler<AddingFailedEventArgs> AddingFailed;
 
         public ReminderDomain(IReminderStorage storage, IReminderReceiver receiver, IReminderSender sender) : this(storage, receiver, sender, TimeSpan.FromMinutes(1), TimeSpan.FromMinutes(1)) { }
-        public ReminderDomain( IReminderStorage storage, IReminderReceiver receiver, IReminderSender sender, TimeSpan awaitingRemindersCheckingPeriod, TimeSpan readyReminderCheckPeriod)
+        public ReminderDomain( IReminderStorage storage, IReminderReceiver receiver, IReminderSender sender, TimeSpan awaitingRemindersCheckPeriod, TimeSpan readyReminderCheckPeriod)
         {
             _storage = storage;
             _receiver = receiver;
             _sender = sender;
-            _awaitingRemindersCheckPeriod = awaitingRemindersCheckingPeriod;
+            _awaitingRemindersCheckPeriod = awaitingRemindersCheckPeriod;
             _readyReminderCheckPeriod = readyReminderCheckPeriod;
         }
 
