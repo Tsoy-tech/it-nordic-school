@@ -6,15 +6,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Reminder.Domain\Reminder.Domain.csproj" />
     <ProjectReference Include="..\Reminder.Receiver.Telegram\Reminder.Receiver.Telegram.csproj" />
     <ProjectReference Include="..\Reminder.Sender.Telegram\Reminder.Sender.Telegram.csproj" />
-    <ProjectReference Include="..\..\Reminder.Storage\Reminder.Storage.InMemory\Reminder.Storage.InMemory.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Reminder.Storage.Core">
-      <HintPath>..\..\Reminder.Storage\Reminder.Storage.Core\bin\Debug\netstandard2.1\Reminder.Storage.Core.dll</HintPath>
+      <HintPath>..\..\Reminder.Storage\Reminder.Storage.WebApi.Client\bin\Debug\netstandard2.1\Reminder.Storage.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Reminder.Storage.InMemory">
+      <HintPath>..\..\Reminder.Storage\Reminder.Storage.InMemory\bin\Debug\netstandard2.1\Reminder.Storage.InMemory.dll</HintPath>
+    </Reference>
+    <Reference Include="Reminder.Storage.WebApi.Client">
+      <HintPath>..\..\Reminder.Storage\Reminder.Storage.WebApi.Client\bin\Debug\netstandard2.1\Reminder.Storage.WebApi.Client.dll</HintPath>
     </Reference>
   </ItemGroup>
 

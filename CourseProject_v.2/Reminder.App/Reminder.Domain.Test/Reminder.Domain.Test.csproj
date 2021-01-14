@@ -11,6 +11,7 @@
     <PackageReference Include="MSTest.TestAdapter" Version="2.0.0" />
     <PackageReference Include="MSTest.TestFramework" Version="2.0.0" />
     <PackageReference Include="coverlet.collector" Version="1.0.1" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,12 +19,14 @@
     <ProjectReference Include="..\Reminder.Receiver.Telegram\Reminder.Receiver.Telegram.csproj" />
     <ProjectReference Include="..\Reminder.Sender.Core\Reminder.Sender.Core.csproj" />
     <ProjectReference Include="..\Reminder.Sender.Telegram\Reminder.Sender.Telegram.csproj" />
-    <ProjectReference Include="..\..\Reminder.Storage\Reminder.Storage.InMemory\Reminder.Storage.InMemory.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Reminder.Storage.Core">
       <HintPath>..\..\Reminder.Storage\Reminder.Storage.Core\bin\Debug\netstandard2.1\Reminder.Storage.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Reminder.Storage.InMemory">
+      <HintPath>..\..\Reminder.Storage\Reminder.Storage.InMemory\bin\Debug\netstandard2.1\Reminder.Storage.InMemory.dll</HintPath>
     </Reference>
   </ItemGroup>
 

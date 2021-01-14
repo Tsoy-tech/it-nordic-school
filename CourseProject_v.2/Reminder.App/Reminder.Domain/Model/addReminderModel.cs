@@ -10,6 +10,7 @@ namespace Reminder.Domain.Model
 		public string AccountId { get; set; }
 		public DateTimeOffset Date { get; set; }
 		public string Message { get; set; }
+		public ReminderItemStatus Status { get; set; }
 
 		public AddReminderModel() { }
 
@@ -18,18 +19,20 @@ namespace Reminder.Domain.Model
 			Date = reminderItem.Date;
 			Message = reminderItem.Message;
 			AccountId = reminderItem.AccountId;
+			Status = reminderItem.Status;
 		}
 
-		public AddReminderModel(DateTimeOffset date, string message, string accountId)
+		public AddReminderModel(DateTimeOffset date, string message, string accountId, ReminderItemStatus status)
 		{
 			Date = date;
 			Message = message;
 			AccountId = accountId;
+			Status = status;
 		}
 
 		public ReminderItem ToReminderItem()
 		{
-			return new ReminderItem(Date, Message, AccountId);
+			return new ReminderItem(Date, Message, AccountId, Status);
 		}
 	}
 }

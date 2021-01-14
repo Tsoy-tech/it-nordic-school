@@ -5,10 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Reminder.Parsing\Reminder.Parsing.csproj" />
     <ProjectReference Include="..\Reminder.Receiver.Core\Reminder.Receiver.Core.csproj" />
     <ProjectReference Include="..\Reminder.Sender.Core\Reminder.Sender.Core.csproj" />
-    <ProjectReference Include="..\..\Reminder.Storage\Reminder.Storage.Core\Reminder.Storage.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Reminder.Storage.Core">
+      <HintPath>..\..\Reminder.Storage\Reminder.Storage.InMemory\bin\Debug\netstandard2.1\Reminder.Storage.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

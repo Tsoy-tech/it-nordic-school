@@ -28,7 +28,7 @@ namespace Reminder.Receiver.Telegram
                     sourceArgs.Message.Chat.Id.ToString(), 
                     sourceArgs.Message.Text);
 
-                MessageReceived?.Invoke(this, ourArgs);
+                OnMessageReceived(this, ourArgs);
             };
 
             _botClient.StartReceiving();

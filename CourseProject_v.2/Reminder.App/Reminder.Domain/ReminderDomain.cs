@@ -33,19 +33,19 @@ namespace Reminder.Domain
         public event EventHandler<AddingFailedEventArgs> AddingFailed;
 
         public ReminderDomain(IReminderStorage storage, IReminderReceiver receiver, IReminderSender sender) : this(storage, receiver, sender, TimeSpan.FromMinutes(1), TimeSpan.FromMinutes(1)) { }
-        public ReminderDomain( IReminderStorage storage, IReminderReceiver receiver, IReminderSender sender, TimeSpan awaitingRemindersCheckPeriod, TimeSpan readyReminderCheckPeriod)
+        public ReminderDomain( IReminderStorage storage, IReminderReceiver receiver, IReminderSender sender, TimeSpan awaitingRemindersCheckPeriod, TimeSpan readyReminderSendPeriod)
         {
             _storage = storage;
             _receiver = receiver;
             _sender = sender;
             _awaitingRemindersCheckPeriod = awaitingRemindersCheckPeriod;
-            _readyReminderCheckPeriod = readyReminderCheckPeriod;
+            _readyReminderCheckPeriod = readyReminderSendPeriod;
         }
 
         public void Run()
         {
-            _awaitingReminderCheckTimer = new Timer(CheckAwaitingReminders, null, TimeSpan.Zero, TimeSpan.FromSeconds(1));
-            _readyReminderSendTimer = new Timer(SendReadyToSendReminders, null, TimeSpan.Zero, TimeSpan.FromSeconds(1));
+            _awaitingReminderCheckTimer = new Timer(CheckAwaitingReminders, null, TimeSpan.Zero, _awaitingRemindersCheckPeriod);
+            _readyReminderSendTimer = new Timer(SendReadyToSendReminders, null, TimeSpan.Zero, _readyReminderCheckPeriod);
 
             _receiver.MessageReceived += ReceiverOnMessageReceived;
             _receiver.StartReceiving();
@@ -65,28 +65,26 @@ namespace Reminder.Domain
         {
             var readyItems = _storage.GetList(new[] { ReminderItemStatus.ReadyToSend });
 
-            foreach (var item in readyItems)
+            foreach (var readyItem in readyItems)
             {
-                var sendingModel = new SendReminderModel(item);
+                var sendingModel = new SendReminderModel(readyItem);
 
                 try 
                 {
                     _sender.Send(sendingModel.AccountId, sendingModel.Message);
 
-                    item.Status = ReminderItemStatus.SuccessfullySent;
+                    readyItem.Status = ReminderItemStatus.SuccessfullySent;
                    
-                    //вызов события успеха
                     SendingSucceeded?.Invoke(this, new SendingSucceededEventArgs(sendingModel));
                 }
                 catch(Exception exception)
                 {
-                    item.Status = ReminderItemStatus.Failed;
+                    readyItem.Status = ReminderItemStatus.Failed;
 
-                    //событие неудачи
                     SendingFailed?.Invoke(this, new SendingFailedEventArgs(sendingModel, exception));
                 }
                 
-                _storage.Update(item);
+                _storage.Update(readyItem);
             }
 
         }
@@ -101,7 +99,7 @@ namespace Reminder.Domain
                 return;
             }
 
-            var item = new ReminderItem(o.Date, o.Message, e.AccountID);
+            var item = new ReminderItem(o.Date, o.Message, e.AccountID, ReminderItemStatus.Awaiting);
 
 			try
 			{
