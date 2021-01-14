@@ -28,36 +28,21 @@ namespace Reminder.Storage.WebApi.Client
 
         public void Add(ReminderItem reminderItem)
         {
-            const string relativeUrl = "";
+            HttpResponseMessage response = CallWebApi(HttpMethod.Post, string.Empty, 
+                new ReminderItemAddModel(reminderItem));
 
-            var request = new HttpRequestMessage(HttpMethod.Post, _baseWebApiUrl + relativeUrl);
+            //Check Response status codes
+            if (response.StatusCode != HttpStatusCode.Created)
+                throw CreateException(response);
 
-            request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("*/*"));
-
-            var model = new ReminderItemAddModel(reminderItem);
-            var content = JsonConvert.SerializeObject(model);
-
-            request.Content = new StringContent(
-                content,
-                Encoding.UTF8,
-                "application/Json"
-                );
-
-            HttpResponseMessage response = _httpClient.SendAsync(request).GetAwaiter().GetResult(); //принять ответ
-
-            if(response.StatusCode != HttpStatusCode.OK)
-
+            // read and parse response Body
+            // parse response Model
+            // return the Result
         }
 
         public ReminderItem Get(Guid id)
         {
-            const string relativeUrl = "";
-
-            var request = new HttpRequestMessage(HttpMethod.Get, _baseWebApiUrl + relativeUrl);
-
-            request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("*/*"));
-
-            HttpResponseMessage response = _httpClient.SendAsync(request).GetAwaiter().GetResult(); //принять ответ
+            HttpResponseMessage response = CallWebApi(HttpMethod.Get, id.ToString());
 
             if (response.StatusCode == HttpStatusCode.NotFound)
                 return null;
@@ -65,25 +50,36 @@ namespace Reminder.Storage.WebApi.Client
             if (response.StatusCode != HttpStatusCode.OK) //проверить статус код
                 throw CreateException(response);
 
+            // Read response Body
             var content = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
 
+            // Parse response Model
             ReminderItemGetModel model = JsonConvert.DeserializeObject<ReminderItemGetModel>(content);
 
             if (model == null)
                 throw new Exception("Body cannot be parsed as List<ReminderItemGetModel>");
-
+            //Return the Result
             return model.ToReminderItem();
         }
 
         public List<ReminderItem> GetList(IEnumerable<ReminderItemStatus> statuses, int count = -1, int startPosition = 0)
         {
-            const string relativeUrl = "";
+            string relativeUrl = string.Empty;
+            var statusList = statuses.ToList();
+            
+            if(statusList.Count > 0)
+			{
+                relativeUrl += '?';
+                foreach(var status in statusList)
+				{
+                    relativeUrl += "status=" + status + '&';
+				}
 
-            var request = new HttpRequestMessage(HttpMethod.Get, _baseWebApiUrl + relativeUrl);
 
-            request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("*/*"));
+			}
 
-            HttpResponseMessage response = _httpClient.SendAsync(request).GetAwaiter().GetResult(); //принять ответ
+
+            HttpResponseMessage response = CallWebApi(HttpMethod.Get, String.Empty);
 
             if (response.StatusCode != HttpStatusCode.OK) //проверить статус код
                 throw CreateException(response);
@@ -99,7 +95,12 @@ namespace Reminder.Storage.WebApi.Client
         }
         public void Update(ReminderItem reminderItem)
         {
-            throw new NotImplementedException();
+            HttpResponseMessage response = CallWebApi(HttpMethod.Put, reminderItem.Id.ToString(),
+                new ReminderItemUpdateModel(reminderItem));
+
+            //Check Response status codes
+            if (response.StatusCode != HttpStatusCode.NoContent)
+                throw CreateException(response);
         }
 
         private Exception CreateException(HttpResponseMessage response)
@@ -108,6 +109,25 @@ namespace Reminder.Storage.WebApi.Client
                 $"Content:\n{response.Content.ReadAsStringAsync().GetAwaiter().GetResult()}");
         }
 
+        private HttpResponseMessage CallWebApi(HttpMethod httpMethod, string relativeUrl, object model = null)
+		{
+            //Prepare Request
+            var request = new HttpRequestMessage(httpMethod, _baseWebApiUrl + relativeUrl);
+
+            //Add Headers
+            request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("*/*"));
+
+            if(model != null)
+			{
+                string content = JsonConvert.SerializeObject(model);
+                request.Content = new StringContent(
+                    content,
+                    Encoding.UTF8,
+                    "application/Json");
+            }
+
+            return _httpClient.SendAsync(request).GetAwaiter().GetResult();
+        }
 
     }
 }

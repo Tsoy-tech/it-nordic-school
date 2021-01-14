@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Reminder.Storage.Core;
 using Reminder.Storage.InMemory;
 
+//add Swagger
 namespace Reminder.Storage.WebApi
 {
     public class Startup
@@ -31,7 +32,7 @@ namespace Reminder.Storage.WebApi
 
             var storage = new InMemoryReminderStorage();
 
-            storage.Add(new ReminderItem(DateTimeOffset.Now, "TextMessage", "54861236", ReminderItemStatus.Awaiting));
+            //storage.Add(new ReminderItem(DateTimeOffset.Now, "TextMessage", "54861236", ReminderItemStatus.Awaiting));
 
             services.AddSingleton<IReminderStorage>(storage);
         }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -22,16 +23,23 @@ namespace Reminder.Storage.WebApi.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAll()
+        public IActionResult GetList([FromQuery(Name = "status")]
+        ReminderItemStatus[] statuses = null)
         {
-            var reminderItems = _storage.GetList(new[] 
-            { ReminderItemStatus.Awaiting, 
-                ReminderItemStatus.Failed, 
-                ReminderItemStatus.ReadyToSend, 
-                ReminderItemStatus.SuccessfullySent
-            });
+            if (statuses == null || statuses.Length == 0)
+                statuses = new[]
+                {
+                    ReminderItemStatus.Awaiting,
+                    ReminderItemStatus.Failed,
+                    ReminderItemStatus.ReadyToSend,
+                    ReminderItemStatus.SuccessfullySent
+                };
 
-            var result = reminderItems.Select(ri => new ReminderItemGetModel(ri)).ToList();
+            List <ReminderItem> reminderItems = _storage.GetList(statuses);
+
+            List <ReminderItemGetModel> result = reminderItems
+                .Select(ri => new ReminderItemGetModel(ri))
+                .ToList();
 
             return Ok(result);
         }
@@ -50,7 +58,10 @@ namespace Reminder.Storage.WebApi.Controllers
 
         [HttpPost]
         public IActionResult Add([FromBody]ReminderItemAddModel model)
-        {
+        {            
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             ReminderItem reminderItem = new ReminderItem(
                 model.Date,
                 model.Message,
@@ -58,12 +69,26 @@ namespace Reminder.Storage.WebApi.Controllers
                 model.Status
             );
 
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
             _storage.Add(reminderItem);
 
             return CreatedAtAction(nameof(Get), new { id = reminderItem.Id}, new ReminderItemGetModel(reminderItem));
         }
+
+        [HttpPut("{id}")]
+        public IActionResult Update(Guid id, [FromBody] ReminderItemUpdateModel model)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var reminderItem = _storage.Get(id);
+            if (reminderItem == null)
+                return NotFound();
+
+            model.UpdateReminderItem(reminderItem);
+            _storage.Update(reminderItem);
+
+            return NoContent();
+		}
+
     }
 }

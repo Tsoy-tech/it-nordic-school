@@ -46,7 +46,6 @@ namespace Reminder.Storage.Core.Tests
         [DataTestMethod]
         [DataRow("1000-01-01 00:00")]
         [DataRow("3000-01-01 00:00")]
-
         public void TimeToAlarm_Positive_For_Future_Event_And_Vise_Versa(string stringDate)
         {
             //Preparing

@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace Reminder.Storage.WebApi.Core
 {
-    public class ReminderItemAddModel
-	{ 
+    public class ReminderItemUpdateModel
+    {
 		/// <summary>
 		/// Gets or sets contact identifier in the target sending system.
 		/// </summary>
@@ -34,14 +34,22 @@ namespace Reminder.Storage.WebApi.Core
 		[Required]
 		public ReminderItemStatus Status { get; set; }
 
-		public ReminderItemAddModel() { }
+		public ReminderItemUpdateModel() { }
 
-		public ReminderItemAddModel(ReminderItem reminderItem) 
+		public ReminderItemUpdateModel(ReminderItem reminderItem) 
 		{
 			AccountId = reminderItem.AccountId;
 			Date = reminderItem.Date;
 			Message = reminderItem.Message;
 			Status = reminderItem.Status;
+		}
+
+		public void UpdateReminderItem(ReminderItem reminderItem)
+		{
+			reminderItem.AccountId = AccountId;
+			reminderItem.Date = Date;
+			reminderItem.Message = Message;
+			reminderItem.Status = Status;
 		}
 	}
 }
