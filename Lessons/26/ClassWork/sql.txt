@@ -1,0 +1,26 @@
+CREATE DATABASE PostOffice1
+
+USE [PostOffice1]
+GO
+
+CREATE TABLE [dbo].[PostalSending](
+	[SenderName] [varchar](100) NOT NULL,
+	[ReceiverName] [varchar](100) NOT NULL,
+	[DocumentTitle] [varchar](200) NOT NULL,
+	[NumberOfPages] [int] NOT NULL,
+	[SendingDate] [datetimeoffset] NOT NULL,
+	[ExpectedReceivingDate] [datetimeoffset] NOT NULL
+) ON [PRIMARY]
+GO
+
+INSERT INTO [dbo].[PostalSending] ([SenderName], [ReceiverName], [DocumentTitle], [NumberOfPages], [SendingDate], [ExpectedReceivingDate])
+VALUES 
+('Иванов Иван Иванович', 'Петров Петр Петрович', 'Договор поставки №1', 10, GETUTCDATE(), '2021-01-10', '2021-01-12'), 
+('Петров Петр Петрович', 'Иванов Иван Иванович', 'Договор поставки №1(экземпляр поставщика)', 10, GETUTCDATE(), '2021-01-13', '2021-01-15')
+GO
+
+SELECT *
+FROM dbo.PostalSending
+
+DROP TABLE [dbo].[PostalSending]
+DROP DATABASE PostOffice1
