@@ -9,13 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reminder.Storage.Core.Tests
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reminder.Storage.InMemory", "Reminder.Storage.InMemory\Reminder.Storage.InMemory.csproj", "{B08149A9-5C49-4994-A244-1D8ABFB3FF3A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reminder.Storage.InMemory.Tests", "Reminder.Storage.InMemory.Tests\Reminder.Storage.InMemory.Tests.csproj", "{6573900D-600A-464C-B34A-69A0B43DEFBD}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reminder.Storage.WebApi", "Reminder.Storage.WebApi\Reminder.Storage.WebApi.csproj", "{4C87CAB2-FFFB-4B9F-96D7-4FA2F9BE95C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reminder.Storage.WebApi.Client", "Reminder.Storage.WebApi.Client\Reminder.Storage.WebApi.Client.csproj", "{587252E5-6701-46E6-AC74-B5C823467191}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reminder.Storage.WebApi.Client", "Reminder.Storage.WebApi.Client\Reminder.Storage.WebApi.Client.csproj", "{587252E5-6701-46E6-AC74-B5C823467191}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reminder.Storage.WebApi.Core", "Reminder.Storage.WebApi.Core\Reminder.Storage.WebApi.Core.csproj", "{F7BFA01B-E4BC-49A4-9879-6EFC2A6331E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reminder.Storage.WebApi.Core", "Reminder.Storage.WebApi.Core\Reminder.Storage.WebApi.Core.csproj", "{F7BFA01B-E4BC-49A4-9879-6EFC2A6331E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reminder.Storage.SqlServer.ADO", "Reminder.Storage.SqlServer.ADO\Reminder.Storage.SqlServer.ADO.csproj", "{2B4B90D5-55DD-46C3-88FE-35BF7184A662}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reminder.Storage.SqlServer.ADO.Tests", "Reminder.Storage.SqlServer.ADO.Tests\Reminder.Storage.SqlServer.ADO.Tests.csproj", "{E84B44ED-431A-4391-BB3C-8112A942DDAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +37,6 @@ Global
 		{B08149A9-5C49-4994-A244-1D8ABFB3FF3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B08149A9-5C49-4994-A244-1D8ABFB3FF3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B08149A9-5C49-4994-A244-1D8ABFB3FF3A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6573900D-600A-464C-B34A-69A0B43DEFBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6573900D-600A-464C-B34A-69A0B43DEFBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6573900D-600A-464C-B34A-69A0B43DEFBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6573900D-600A-464C-B34A-69A0B43DEFBD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4C87CAB2-FFFB-4B9F-96D7-4FA2F9BE95C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4C87CAB2-FFFB-4B9F-96D7-4FA2F9BE95C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C87CAB2-FFFB-4B9F-96D7-4FA2F9BE95C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +49,14 @@ Global
 		{F7BFA01B-E4BC-49A4-9879-6EFC2A6331E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7BFA01B-E4BC-49A4-9879-6EFC2A6331E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7BFA01B-E4BC-49A4-9879-6EFC2A6331E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B4B90D5-55DD-46C3-88FE-35BF7184A662}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B4B90D5-55DD-46C3-88FE-35BF7184A662}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B4B90D5-55DD-46C3-88FE-35BF7184A662}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B4B90D5-55DD-46C3-88FE-35BF7184A662}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E84B44ED-431A-4391-BB3C-8112A942DDAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E84B44ED-431A-4391-BB3C-8112A942DDAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E84B44ED-431A-4391-BB3C-8112A942DDAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E84B44ED-431A-4391-BB3C-8112A942DDAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

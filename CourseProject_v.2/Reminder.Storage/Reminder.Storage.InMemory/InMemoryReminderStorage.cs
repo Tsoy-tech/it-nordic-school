@@ -9,9 +9,11 @@ namespace Reminder.Storage.InMemory
     {
         private readonly Dictionary<Guid, ReminderItem> _dictionary = new Dictionary<Guid, ReminderItem>();
         //readonly только к элементам, которые изменяются ТОЛЬКО в КОНСТРУКТОРЕ!!! Это делается для эффективного распределения памяти!
-        public void Add(ReminderItem reminderItem)
+        public Guid Add(ReminderItemRestricted reminderItemResctricted)
         {
-            _dictionary.Add(reminderItem.Id, reminderItem);
+            Guid id = Guid.NewGuid();
+            _dictionary.Add(id, reminderItemResctricted.ToReminderItem(id));
+            return id;
         }
 
         public void Update(ReminderItem reminderItem)

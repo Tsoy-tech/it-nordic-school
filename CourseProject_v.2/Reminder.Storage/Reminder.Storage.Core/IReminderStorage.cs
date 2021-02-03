@@ -5,7 +5,7 @@ namespace Reminder.Storage.Core
 {
     public interface IReminderStorage
     {
-        void Add(ReminderItem reminderItem);
+        Guid Add(ReminderItemRestricted reminderItem);
 
         void Update(ReminderItem reminderItem);
 

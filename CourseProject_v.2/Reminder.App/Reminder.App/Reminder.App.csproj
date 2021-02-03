@@ -17,13 +17,16 @@
 
   <ItemGroup>
     <Reference Include="Reminder.Storage.Core">
-      <HintPath>..\..\Reminder.Storage\Reminder.Storage.WebApi.Client\bin\Debug\netstandard2.1\Reminder.Storage.Core.dll</HintPath>
+      <HintPath>..\..\..\..\..\Git\it-nordic-school\CourseProject_v.2\Reminder.Storage\Reminder.Storage.Core\bin\Debug\netstandard2.1\Reminder.Storage.Core.dll</HintPath>
     </Reference>
     <Reference Include="Reminder.Storage.InMemory">
       <HintPath>..\..\Reminder.Storage\Reminder.Storage.InMemory\bin\Debug\netstandard2.1\Reminder.Storage.InMemory.dll</HintPath>
     </Reference>
     <Reference Include="Reminder.Storage.WebApi.Client">
       <HintPath>..\..\Reminder.Storage\Reminder.Storage.WebApi.Client\bin\Debug\netstandard2.1\Reminder.Storage.WebApi.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Reminder.Storage.WebApi.Core">
+      <HintPath>..\..\..\..\..\Git\it-nordic-school\CourseProject_v.2\Reminder.Storage\Reminder.Storage.WebApi.Core\bin\Debug\netstandard2.1\Reminder.Storage.WebApi.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
 

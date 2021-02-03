@@ -36,12 +36,12 @@ namespace Reminder.Storage.WebApi.Core
 
 		public ReminderItemAddModel() { }
 
-		public ReminderItemAddModel(ReminderItem reminderItem) 
+		public ReminderItemAddModel(ReminderItemRestricted reminderItemRestricted) 
 		{
-			AccountId = reminderItem.AccountId;
-			Date = reminderItem.Date;
-			Message = reminderItem.Message;
-			Status = reminderItem.Status;
+			AccountId = reminderItemRestricted.AccountId;
+			Date = reminderItemRestricted.Date;
+			Message = reminderItemRestricted.Message;
+			Status = reminderItemRestricted.Status;
 		}
 	}
 }

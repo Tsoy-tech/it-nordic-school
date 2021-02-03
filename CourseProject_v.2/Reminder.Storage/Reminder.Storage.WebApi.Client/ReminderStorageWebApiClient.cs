@@ -26,18 +26,24 @@ namespace Reminder.Storage.WebApi.Client
             _httpClient = new HttpClient();
         }
 
-        public void Add(ReminderItem reminderItem)
+        public Guid Add(ReminderItemRestricted reminderItemRestricted)
         {
             HttpResponseMessage response = CallWebApi(HttpMethod.Post, string.Empty, 
-                new ReminderItemAddModel(reminderItem));
+                new ReminderItemAddModel(reminderItemRestricted));
 
             //Check Response status codes
             if (response.StatusCode != HttpStatusCode.Created)
                 throw CreateException(response);
 
-            // read and parse response Body
-            // parse response Model
-            // return the Result
+            string path = response.Headers.Location.LocalPath;
+            int lastIndexOfSlash = path.LastIndexOf('/');
+
+            if (lastIndexOfSlash > -1)
+            {
+                return Guid.Parse(path.Substring(lastIndexOfSlash + 1));
+            }
+
+            throw CreateException(response);
         }
 
         public ReminderItem Get(Guid id)

@@ -62,16 +62,16 @@ namespace Reminder.Storage.WebApi.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            ReminderItem reminderItem = new ReminderItem(
+            ReminderItemRestricted reminderItemRestricted = new ReminderItemRestricted(
                 model.Date,
                 model.Message,
                 model.AccountId,
                 model.Status
             );
 
-            _storage.Add(reminderItem);
-
-            return CreatedAtAction(nameof(Get), new { id = reminderItem.Id}, new ReminderItemGetModel(reminderItem));
+            Guid id = _storage.Add(reminderItemRestricted);
+    
+            return CreatedAtAction(nameof(Get), new { id }, new ReminderItemGetModel(reminderItemRestricted.ToReminderItem(id)));
         }
 
         [HttpPut("{id}")]
