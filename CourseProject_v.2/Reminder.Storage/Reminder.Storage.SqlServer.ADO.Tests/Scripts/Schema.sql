@@ -1,6 +1,6 @@
-﻿--CREATE DATABASE [Reminder];
+﻿--CREATE DATABASE [ReminderDB];
 --GO
-USE [Reminder];
+USE [ReminderDB];
 GO
 -- drop foreign key
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[ReminderItem]') AND type in (N'U'))
@@ -13,7 +13,7 @@ IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Remind
 GO
 CREATE TABLE [dbo].[ReminderItem] (
 	[Id] UNIQUEIDENTIFIER NOT NULL,
-	[ContactId] VARCHAR(50) NOT NULL, -- According to the model's restriction in ReminderItemCreateModel.cs
+	[AccountId] VARCHAR(50) NOT NULL, -- According to the model's restriction in ReminderItemCreateModel.cs
 	[TargetDate] DATETIMEOFFSET NOT NULL,
 	[Message] NVARCHAR(200) NOT NULL, -- -- According to the model's restriction in ReminderItemCreateModel.cs
 	[StatusId] TINYINT NOT NULL,

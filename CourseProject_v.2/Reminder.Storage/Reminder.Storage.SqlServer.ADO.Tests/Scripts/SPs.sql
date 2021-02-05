@@ -49,8 +49,7 @@ GO
 DROP PROCEDURE IF EXISTS [dbo].[RemoveReminderItem]
 GO
 CREATE PROCEDURE [dbo].[RemoveReminderItem] (
-	@reminderId AS UNIQUEIDENTIFIER,
-	@deleted AS BIT OUTPUT
+	@reminderId AS UNIQUEIDENTIFIER, @deleted AS BIT
 )
 AS BEGIN
 	SET NOCOUNT ON

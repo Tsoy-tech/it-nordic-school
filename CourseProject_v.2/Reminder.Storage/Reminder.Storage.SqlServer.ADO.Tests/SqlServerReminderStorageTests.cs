@@ -17,9 +17,12 @@ namespace Reminder.Storage.SqlServer.ADO.Tests
         private static string _connectionString;
         
         [ClassInitialize]
-        public static void Classinitialize(TestContext context)
+        public static void ClassInitialize(TestContext context)
         {
-            _connectionString = new ConfigurationBuilder().AddJsonFile("appsetings.json").Build().GetConnectionString("DefaultConnection");
+            _connectionString = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json")
+                .Build()
+                .GetConnectionString("DefaultConnection");
         }
 
         [TestInitialize]
