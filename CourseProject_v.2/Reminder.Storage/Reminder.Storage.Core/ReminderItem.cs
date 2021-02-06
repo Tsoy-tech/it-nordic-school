@@ -6,6 +6,11 @@ namespace Reminder.Storage.Core
 {
 	public class ReminderItem
     {
+		private Guid reminderItemId;
+		private DateTimeOffset expectedDate;
+		private string expectedAccountId;
+		private ReminderItemStatus expectedStatus;
+
 		//Properties
 		public Guid Id { get; }
 		public Chat Chat { get; }
@@ -17,11 +22,11 @@ namespace Reminder.Storage.Core
 		public ReminderItemStatus Status { get; set; }
 
 		public ReminderItem(DateTimeOffset date, string message, string accountId, ReminderItemStatus status) : this(Guid.NewGuid(), date, message, accountId, status) { }
+
 		public ReminderItem(Guid id, DateTimeOffset date, string message, string accountId, ReminderItemStatus status)
 		{
 			Id = id;
 			Chat = Chat.Telegram;
-
 			Date = date;
 			Message = message;
 			AccountId = accountId;

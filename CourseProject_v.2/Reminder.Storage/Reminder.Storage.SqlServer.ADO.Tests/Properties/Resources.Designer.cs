@@ -61,9 +61,39 @@ namespace Reminder.Storage.SqlServer.ADO.Tests.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to --CREATE DATABASE [Reminder];
+        ///   Looks up a localized string similar to USE [ReminderTest]
+        ///GO
+        ///
+        ///INSERT INTO [dbo].[ReminderItem]
+        ///           ([Id]
+        ///           ,[AccountId]
+        ///           ,[TargetDate]
+        ///           ,[Message]
+        ///           ,[StatusId]
+        ///           ,[CreatedDate]
+        ///           ,[UpdatedDate])
+        ///     VALUES
+        ///           (&apos;00000000-0000-0000-0000-111111111111&apos;,
+        ///            &apos;AccountId_1&apos;,
+        ///            &apos;2022-01-01 00:00:00 +00:00&apos;,
+        ///            &apos;Message_1&apos;,
+        ///            0,
+        ///            &apos;2000-01-01 00:00:00 +00:00&apos;,
+        ///            &apos;2000-01-01 00:00:00 +00:00&apos;)
+        ///GO
+        ///
+        ///INSERT INT [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Data {
+            get {
+                return ResourceManager.GetString("Data", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to --CREATE DATABASE [ReminderTest];
         ///--GO
-        ///USE [Reminder];
+        ///USE [ReminderTest];
         ///GO
         ///-- drop foreign key
         ///IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[ReminderItem]&apos;) AND type in (N&apos;U&apos;))
@@ -74,8 +104,7 @@ namespace Reminder.Storage.SqlServer.ADO.Tests.Properties {
         ///IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[ReminderItem]&apos;) AND type in (N&apos;U&apos;))
         ///	DROP TABLE [dbo].[ReminderItem]
         ///GO
-        ///CREATE TABLE [dbo].[ReminderItem] (
-        ///	[ [rest of string was truncated]&quot;;.
+        ///CREATE TABLE [dbo].[ReminderIte [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Schema {
             get {

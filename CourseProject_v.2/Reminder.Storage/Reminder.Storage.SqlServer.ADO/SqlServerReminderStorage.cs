@@ -63,12 +63,78 @@ namespace Reminder.Storage.SqlServer.ADO
         }
         public List<ReminderItem> GetList(IEnumerable<ReminderItemStatus> statuses, int count = -1, int startPosition = 0)
         {
-            throw new NotImplementedException();
+            var result = new List<ReminderItem>();
+
+            using var connection = GetOpennedSqlConnection();
+
+            var command = connection.CreateCommand();
+            const string tempTableName = "##tempReminderItemStatus";
+
+            command.CommandType = CommandType.Text;
+            command.CommandText = $"CREATE TABLE {tempTableName} (StatusId TINYINT NOT NULL)";
+            command.ExecuteNonQuery();
+
+            var dataTable = new DataTable();
+            dataTable.Columns.Add(new DataColumn("StatusId", typeof(byte)));
+            
+            foreach(var status in statuses)
+            {
+                dataTable.Rows.Add((byte)status);
+            }
+
+            var bcp = new SqlBulkCopy(connection);
+            bcp.DestinationTableName = tempTableName;
+            bcp.WriteToServer(dataTable);
+
+            command.CommandType = CommandType.StoredProcedure;
+            command.CommandText = "[dbo].[GetReminderItemsByStatuses]";
+
+            using (var reader = command.ExecuteReader())
+            {
+
+                if (!reader.Read())
+                {
+                    return null;
+                }
+
+                int ordinalId = reader.GetOrdinal("Id");
+                int ordinalAccountId = reader.GetOrdinal("AccountId");
+                int ordinalTargetDate = reader.GetOrdinal("TargetDate");
+                int ordinalMessage = reader.GetOrdinal("Message");
+                int ordinalStatusId = reader.GetOrdinal("StatusId");
+
+                while (reader.Read())
+                {
+                    result.Add(new ReminderItem(
+                            reader.GetGuid(ordinalId),
+                            reader.GetDateTimeOffset(ordinalTargetDate),
+                            reader.GetString(ordinalMessage),
+                            reader.GetString(ordinalAccountId),
+                            (ReminderItemStatus)reader.GetByte(ordinalStatusId)));
+                }
+            }
+
+            command.CommandType = CommandType.Text;
+            command.CommandText = $"DROP TABLE {tempTableName}";
+            command.ExecuteNonQuery();
+
+            return result;
         }
 
         public void Update(ReminderItem reminderItem)
         {
-            throw new NotImplementedException();
+            using var connection = GetOpennedSqlConnection();
+            var command = connection.CreateCommand();
+            command.CommandType = CommandType.StoredProcedure;
+            command.CommandText = "[dbo].[UpdateReminderItem]";
+
+            command.Parameters.AddWithValue("@reminderId", reminderItem.Id);
+            command.Parameters.AddWithValue("@contactId", reminderItem.AccountId);
+            command.Parameters.AddWithValue("@targetDate", reminderItem.Date);
+            command.Parameters.AddWithValue("@message", reminderItem.Message);
+            command.Parameters.AddWithValue("@statusId", (byte)reminderItem.Status);
+
+            command.ExecuteNonQuery();
         }
 
         private SqlConnection GetOpennedSqlConnection()

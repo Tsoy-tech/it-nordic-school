@@ -83,10 +83,14 @@ AS BEGIN
 	WHERE [Id] = @reminderId
 END
 GO
+
 DROP PROCEDURE IF EXISTS [dbo].[UpdateReminderItem]
 GO
 CREATE PROCEDURE [dbo].[UpdateReminderItem] (
 	@reminderId AS UNIQUEIDENTIFIER,
+	@contactId AS VARCHAR(50),
+	@targetDate AS DATETIMEOFFSET,
+	@message AS NVARCHAR(200),
 	@statusId AS TINYINT
 )
 AS BEGIN
@@ -94,10 +98,14 @@ AS BEGIN
 
 	UPDATE [dbo].[ReminderItem]
 		SET [StatusId] = @statusId,
-		[UpdatedDate] = SYSDATETIMEOFFSET()
+		[UpdatedDate] = SYSDATETIMEOFFSET(),
+		[AccountId] = @contactId,
+		[Message] = @message,
+		[TargetDate] = @targetDate
 	WHERE [Id] = @reminderId
 END
 GO
+
 --
 DROP PROCEDURE IF EXISTS [dbo].[GetReminderItemsWithPaging]
 GO
@@ -168,3 +176,22 @@ AS BEGIN
 	TRUNCATE TABLE [dbo].[ReminderItem]
 END
 GO
+
+DROP PROCEDURE IF EXISTS [dbo].[GetReminderItemsByStatuses]
+GO
+CREATE PROCEDURE [dbo].[GetReminderItemsByStatuses]
+AS
+BEGIN
+	SET NOCOUNT ON
+	SELECT
+		R.[Id],
+		R.[AccountId],
+		R.[TargetDate],
+		R.[Message],
+		R.[StatusId]
+	FROM [dbo].[ReminderItem] AS R
+	INNER JOIN #tempReminderItemStatus AS T
+		ON T.StatusId = R.StatusId
+END
+GO
+	

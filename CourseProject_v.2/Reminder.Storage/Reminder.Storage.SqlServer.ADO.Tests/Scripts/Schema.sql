@@ -1,6 +1,6 @@
-﻿--CREATE DATABASE [ReminderDB];
+﻿--CREATE DATABASE [ReminderTest];
 --GO
-USE [ReminderDB];
+USE [ReminderTest];
 GO
 -- drop foreign key
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[ReminderItem]') AND type in (N'U'))
