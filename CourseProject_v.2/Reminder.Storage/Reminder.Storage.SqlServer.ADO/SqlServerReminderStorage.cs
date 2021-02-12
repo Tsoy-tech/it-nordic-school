@@ -82,9 +82,11 @@ namespace Reminder.Storage.SqlServer.ADO
                 dataTable.Rows.Add((byte)status);
             }
 
-            var bcp = new SqlBulkCopy(connection);
-            bcp.DestinationTableName = tempTableName;
-            bcp.WriteToServer(dataTable);
+			var bcp = new SqlBulkCopy(connection)
+			{
+				DestinationTableName = tempTableName
+			};
+			bcp.WriteToServer(dataTable);
 
             command.CommandType = CommandType.StoredProcedure;
             command.CommandText = "[dbo].[GetReminderItemsByStatuses]";

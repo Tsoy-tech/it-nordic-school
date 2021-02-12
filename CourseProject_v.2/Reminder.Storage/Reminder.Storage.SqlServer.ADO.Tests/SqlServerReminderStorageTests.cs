@@ -1,14 +1,14 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Text;
-using Reminder.Storage.SqlServer.ADO.Tests.Properties;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Data;
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
-using System.Linq;
 using Reminder.Storage.Core;
 using Microsoft.Extensions.Configuration;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Reminder.Storage.SqlServer.ADO.Tests.Properties;
 
 namespace Reminder.Storage.SqlServer.ADO.Tests
 {
