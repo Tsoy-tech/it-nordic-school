@@ -34,7 +34,6 @@ namespace Reminder.Storage.WebApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Reminders API", Version = "V1" });
             });
-
             var storage = new InMemoryReminderStorage();
 
             //storage.Add(new ReminderItem(DateTimeOffset.Now, "TextMessage", "54861236", ReminderItemStatus.Awaiting));

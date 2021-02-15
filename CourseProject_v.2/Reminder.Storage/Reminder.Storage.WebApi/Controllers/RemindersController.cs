@@ -13,8 +13,8 @@ namespace Reminder.Storage.WebApi.Controllers
     //[controller] - шаблон
     public class RemindersController : ControllerBase
     {
-        private readonly IReminderStorage _storage;
         private readonly ILogger<RemindersController> _logger;
+        private readonly IReminderStorage _storage;
 
         public RemindersController(ILogger<RemindersController> logger, IReminderStorage storage)
         {
@@ -26,6 +26,8 @@ namespace Reminder.Storage.WebApi.Controllers
         public IActionResult GetList([FromQuery(Name = "status")]
         ReminderItemStatus[] statuses = null)
         {
+            _logger.LogInformation($"{nameof(GetList)} called");
+
             if (statuses == null || statuses.Length == 0)
                 statuses = new[]
                 {
@@ -47,6 +49,7 @@ namespace Reminder.Storage.WebApi.Controllers
         [HttpGet("{id}")]
         public IActionResult Get(Guid id)
         {
+            _logger.LogInformation($"{nameof(Get)} called");
             var reminderItem = _storage.Get(id);
 
             if (reminderItem == null)
@@ -58,7 +61,9 @@ namespace Reminder.Storage.WebApi.Controllers
 
         [HttpPost]
         public IActionResult Add([FromBody]ReminderItemAddModel model)
-        {            
+        {
+            _logger.LogInformation($"{nameof(Add)} called");
+
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
@@ -77,6 +82,8 @@ namespace Reminder.Storage.WebApi.Controllers
         [HttpPut("{id}")]
         public IActionResult Update(Guid id, [FromBody] ReminderItemUpdateModel model)
         {
+            _logger.LogInformation($"{nameof(Update)} called");
+
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
