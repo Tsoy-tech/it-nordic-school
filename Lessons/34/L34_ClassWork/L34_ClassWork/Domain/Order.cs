@@ -10,6 +10,6 @@ namespace L34_ClassWork.Domain
         public Customer Customer { get; set; }
         public DateTimeOffset OrderDate { get; set; }
         public decimal Discount { get; set; }
-        List<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
+        public List<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
     }
 }
