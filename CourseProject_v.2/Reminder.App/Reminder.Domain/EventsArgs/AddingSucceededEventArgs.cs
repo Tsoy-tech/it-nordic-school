@@ -9,9 +9,12 @@ namespace Reminder.Domain
 	{
 		public AddReminderModel Reminder { get; set; }
 
-		public AddingSucceededEventArgs(AddReminderModel reminder)
+		public Guid NewReminderId { get; set; }
+
+		public AddingSucceededEventArgs(AddReminderModel reminder, Guid newReminderId)
 		{
 			Reminder = reminder;
+			NewReminderId = newReminderId;
 		}
 	}
 }

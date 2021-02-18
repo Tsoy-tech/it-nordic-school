@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
-using System.Text;
 using System.Data;
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
@@ -15,15 +14,17 @@ namespace Reminder.Storage.SqlServer.ADO.Tests
     [TestClass]
     public class SqlServerReminderStorageTests
     {
-        private static string _connectionString;
+        private static IConfiguration _configuration;
         
+        public SqlServerReminderStorageTests()
+		{
+            _configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+        }
+
         [ClassInitialize]
         public static void ClassInitialize(TestContext context)
         {
-            _connectionString = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json")
-                .Build()
-                .GetConnectionString("DefaultConnection");
+
         }
 
         [TestInitialize]
@@ -37,7 +38,7 @@ namespace Reminder.Storage.SqlServer.ADO.Tests
         [TestMethod]
         public void Add_Creates_New_ReminderItem_And_Gets_Them()
         {
-            var storage = new SqlServerReminderStorage(_connectionString);
+            var storage = GetSqlServerReminderStorage();
 
             DateTimeOffset expectedDate = DateTimeOffset.Now;
             string expectedAccountId = "TEST_ACCOUNT_ID";
@@ -54,13 +55,12 @@ namespace Reminder.Storage.SqlServer.ADO.Tests
             Assert.AreEqual(expectedDate, actualReminderItem.Date);
             Assert.AreEqual(expectedMessage, actualReminderItem.Message);
             Assert.AreEqual(expectedStatus, actualReminderItem.Status);
-
         }
 
         [TestMethod]
         public void Update_Updates_ReminderItem()
         {
-            var storage = new SqlServerReminderStorage(_connectionString);
+            var storage = GetSqlServerReminderStorage();
 
             Guid reminderItemId = new Guid("00000000-0000-0000-0000-111111111111");
             DateTimeOffset expectedDate = DateTimeOffset.Now;
@@ -86,23 +86,26 @@ namespace Reminder.Storage.SqlServer.ADO.Tests
             Assert.IsTrue(reader.Read());
 
             int ordinalId = reader.GetOrdinal("Id");
-            int ordinalAccountId = reader.GetOrdinal("AccountId");
+            int ordinalContactId = reader.GetOrdinal("AccountId");
             int ordinalTargetDate = reader.GetOrdinal("TargetDate");
             int ordinalMessage = reader.GetOrdinal("Message");
             int ordinalStatusId = reader.GetOrdinal("StatusId");
-            int ordinalExpectedCreatedDate = reader.GetOrdinal("CreatedDate");
+            int ordinalCreatedDate = reader.GetOrdinal("CreatedDate");
+            int ordinalUpdatedDate = reader.GetOrdinal("UpdatedDate");
 
             Assert.AreEqual(reminderItemId, reader.GetGuid(ordinalId));
             Assert.AreEqual(expectedDate, reader.GetDateTimeOffset(ordinalTargetDate));
             Assert.AreEqual(expectedMessage, reader.GetString(ordinalMessage));
+            Assert.AreEqual(expectedAccountId, reader.GetString(ordinalContactId));
             Assert.AreEqual(expectedStatus, (ReminderItemStatus)reader.GetByte(ordinalStatusId));
-            //Assert.AreEqual(expectedUpdateDate, reader.GetDateTimeOffset(ordinalTargetDate));
+            Assert.AreEqual(expectedCreatedDate, reader.GetDateTimeOffset(ordinalCreatedDate));
+            Assert.IsTrue((reader.GetDateTimeOffset(ordinalUpdatedDate) - expectedUpdateDate).TotalSeconds < 5);
         }
 
         [TestMethod]
         public void GetReminderItemsByStatus_Returns_Corresponding_Records()
         {
-            var storage = new SqlServerReminderStorage(_connectionString);
+            var storage = GetSqlServerReminderStorage();
             int expectedCount = 3;
             var statuses = new List<ReminderItemStatus>
             {
@@ -129,9 +132,14 @@ namespace Reminder.Storage.SqlServer.ADO.Tests
         }
         private SqlConnection GetOpennedSqlConnection()
         {
-            SqlConnection connection = new SqlConnection(_connectionString);
+            SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection"));
             connection.Open();
             return connection;
         }
+
+        private IReminderStorage GetSqlServerReminderStorage()
+		{
+            return new SqlServerReminderStorage(_configuration);
+		}
     }
 }

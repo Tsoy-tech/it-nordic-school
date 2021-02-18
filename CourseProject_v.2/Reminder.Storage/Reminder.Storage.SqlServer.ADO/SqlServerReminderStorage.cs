@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
 using Reminder.Storage.Core;
 
 namespace Reminder.Storage.SqlServer.ADO
@@ -14,6 +15,9 @@ namespace Reminder.Storage.SqlServer.ADO
         {
             _connectionString = connectionstring;
         }
+
+        public SqlServerReminderStorage(IConfiguration configuration) : this(configuration.GetConnectionString("DefaultConnection")) 
+        { }
 
         public Guid Add(ReminderItemRestricted reminderItemRestricted)
         {
@@ -42,9 +46,7 @@ namespace Reminder.Storage.SqlServer.ADO
             using var reader = command.ExecuteReader();
 
             if (!reader.Read())
-            {
                 return null;
-            }
 
             int ordinalId = reader.GetOrdinal("Id");
             int ordinalAccountId = reader.GetOrdinal("AccountId");
@@ -68,8 +70,9 @@ namespace Reminder.Storage.SqlServer.ADO
             using var connection = GetOpennedSqlConnection();
 
             var command = connection.CreateCommand();
-            const string tempTableName = "##tempReminderItemStatus";
+            const string tempTableName = "#tempReminderItemStatus";
 
+            //Create temp table
             command.CommandType = CommandType.Text;
             command.CommandText = $"CREATE TABLE {tempTableName} (StatusId TINYINT NOT NULL)";
             command.ExecuteNonQuery();
@@ -93,12 +96,6 @@ namespace Reminder.Storage.SqlServer.ADO
 
             using (var reader = command.ExecuteReader())
             {
-
-                if (!reader.Read())
-                {
-                    return null;
-                }
-
                 int ordinalId = reader.GetOrdinal("Id");
                 int ordinalAccountId = reader.GetOrdinal("AccountId");
                 int ordinalTargetDate = reader.GetOrdinal("TargetDate");

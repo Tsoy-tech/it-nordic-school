@@ -53,7 +53,7 @@ namespace Reminder.Storage.WebApi.Client
             if (response.StatusCode == HttpStatusCode.NotFound)
                 return null;
 
-            if (response.StatusCode != HttpStatusCode.OK) //проверить статус код
+            if (response.StatusCode != HttpStatusCode.OK)
                 throw CreateException(response);
 
             // Read response Body
@@ -64,6 +64,7 @@ namespace Reminder.Storage.WebApi.Client
 
             if (model == null)
                 throw new Exception("Body cannot be parsed as List<ReminderItemGetModel>");
+
             //Return the Result
             return model.ToReminderItem();
         }
@@ -80,12 +81,9 @@ namespace Reminder.Storage.WebApi.Client
 				{
                     relativeUrl += "status=" + status + '&';
 				}
-
-
 			}
 
-
-            HttpResponseMessage response = CallWebApi(HttpMethod.Get, String.Empty);
+            HttpResponseMessage response = CallWebApi(HttpMethod.Get, relativeUrl);
 
             if (response.StatusCode != HttpStatusCode.OK) //проверить статус код
                 throw CreateException(response);
@@ -134,6 +132,5 @@ namespace Reminder.Storage.WebApi.Client
 
             return _httpClient.SendAsync(request).GetAwaiter().GetResult();
         }
-
     }
 }

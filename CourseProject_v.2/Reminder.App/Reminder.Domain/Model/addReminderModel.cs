@@ -14,7 +14,7 @@ namespace Reminder.Domain.Model
 
 		public AddReminderModel() { }
 
-		public AddReminderModel(ReminderItem reminderItem)
+		public AddReminderModel(ReminderItemRestricted reminderItem)
 		{
 			Date = reminderItem.Date;
 			Message = reminderItem.Message;

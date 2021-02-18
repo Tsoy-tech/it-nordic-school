@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -12,9 +8,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Reminder.Storage.Core;
-using Reminder.Storage.InMemory;
+using Reminder.Storage.SqlServer.ADO;
 
-//add Swagger
 namespace Reminder.Storage.WebApi
 {
     public class Startup
@@ -34,11 +29,9 @@ namespace Reminder.Storage.WebApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Reminders API", Version = "V1" });
             });
-            var storage = new InMemoryReminderStorage();
 
-            //storage.Add(new ReminderItem(DateTimeOffset.Now, "TextMessage", "54861236", ReminderItemStatus.Awaiting));
-
-            services.AddSingleton<IReminderStorage>(storage);
+            // Add SqlServer storage
+            services.AddSingleton<IReminderStorage, SqlServerReminderStorage>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -50,7 +50,29 @@ namespace Reminder.Domain
             _receiver.MessageReceived += ReceiverOnMessageReceived;
             _receiver.StartReceiving();
         }
+        private void ReceiverOnMessageReceived(object sender, MessageReceivedEventArgs e)
+        {
+            var o = MessageParser.Parse(e.Message);
+            if (o == null)
+            {
+                ParsingFailed?.Invoke(this, new ParsingFailedEventArgs(e.AccountID, e.Message));
 
+                return;
+            }
+
+            var item = new ReminderItemRestricted(o.Date, o.Message, e.AccountID, ReminderItemStatus.Awaiting);
+
+            try
+            {
+                Guid id = _storage.Add(item);
+
+                AddingSucceeded?.Invoke(this, new AddingSucceededEventArgs(new AddReminderModel(item), id));
+            }
+            catch (Exception exception)
+            {
+                AddingFailed?.Invoke(this, new AddingFailedEventArgs(new AddReminderModel(item), exception));
+            }
+        }
         private void CheckAwaitingReminders(object _) //Подчеркивание "_" = не используем!
         {
             var readyItems = _storage.GetList(new[] { ReminderItemStatus.Awaiting }).Where(i => i.IsTimeToSend);
@@ -87,30 +109,6 @@ namespace Reminder.Domain
                 _storage.Update(readyItem);
             }
 
-        }
-
-        private void ReceiverOnMessageReceived(object sender, MessageReceivedEventArgs e)
-        {
-            var o = MessageParser.Parse(e.Message);
-            if(o == null)
-            {
-                ParsingFailed?.Invoke(this, new ParsingFailedEventArgs(e.AccountID, e.Message));
-
-                return;
-            }
-
-            var item = new ReminderItem(o.Date, o.Message, e.AccountID, ReminderItemStatus.Awaiting);
-
-			try
-			{
-                _storage.Add(item);
-
-                AddingSucceeded?.Invoke(this, new AddingSucceededEventArgs(new AddReminderModel(item)));
-			}
-            catch(Exception exception)
-			{
-                AddingFailed?.Invoke(this, new AddingFailedEventArgs(new AddReminderModel(item), exception));
-			}
         }
 
         public void Dispose()

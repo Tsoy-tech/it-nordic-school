@@ -3,6 +3,7 @@ using Reminder.Domain;
 using Reminder.Sender.Telegram;
 using Reminder.Receiver.Telegram;
 using Reminder.Storage.WebApi.Client;
+using Microsoft.Extensions.Configuration;
 
 namespace Reminder.App
 {
@@ -10,10 +11,12 @@ namespace Reminder.App
     {
         static void Main()
         {
-            const string token = "1467408776:AAGSGszyTCYYCTWTKu4PL_it029uC8X8hbs";
+            var config = new ConfigurationBuilder().AddJsonFile("settings.json").Build();
+            string token = config["TelegramToken"];
+            string apiUrl = config["RemindersWebApiUrl"];
             //botID = "1467408776"
 
-            var storage = new ReminderStorageWebApiClient("https://localhost:44354/api/reminders");
+            var storage = new ReminderStorageWebApiClient(apiUrl);
 
             var sender = new TelegramReminderSender(token);
             var receiver = new TelegramReminderReceiver(token);
@@ -53,7 +56,8 @@ namespace Reminder.App
             Console.WriteLine(
                 $"New reminder from {e.Reminder.AccountId} received: " +
                 $"message '{e.Reminder.Message}' " +
-                $"at {e.Reminder.Date:r}");
+                $"at {e.Reminder.Date:r}" +
+                $"registred as {e.NewReminderId}");
         }
 
         private static void Domain_ParsingFailed(object sender, ParsingFailedEventArgs e)

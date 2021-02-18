@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <Reference Include="Reminder.Storage.Core">
-      <HintPath>..\..\Reminder.Storage\Reminder.Storage.InMemory\bin\Debug\netstandard2.1\Reminder.Storage.Core.dll</HintPath>
+      <HintPath>C:\Users\Tsoy\Desktop\CourseProject_v.2\Reminder.Storage\Reminder.Storage.Core\bin\Debug\netstandard2.1\Reminder.Storage.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
 
